@@ -5,5 +5,7 @@ from .models import Category
 def get_all_categories(request):
     """This function returns all categories."""
     categories = Category.objects.all()
-    context = {"categories": categories}
+    context = {
+        "categories": categories
+    }
     return context
