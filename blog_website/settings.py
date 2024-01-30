@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     "ckeditor",
     "cloudinary",
     "blog",
-    "notification"
+    "notification",
     "user_profile",
 ]
 

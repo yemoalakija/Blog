@@ -14,7 +14,7 @@ class User(AbstractUser):
         }
     )
     profile_image = models.ImageField(
-        upload_to="images/", default="../default_profile_a8wxng"
+        upload_to="images/", default="../default_profile_jldl6n"
     )
     followers = models.ManyToManyField("Follow")
 
