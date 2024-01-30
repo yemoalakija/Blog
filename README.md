@@ -194,7 +194,7 @@ So a text deployment was launch at the very early stage of the project to make s
 You can make this repository your own by:
 
 ```bash
-git clone https://github.com/yemoalakija/DjangoBlog
+git clone https://github.com/yemoalakija/Blog.git
 ```
 
 and
