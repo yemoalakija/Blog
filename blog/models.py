@@ -8,7 +8,7 @@ from .slugs import generate_unique_slug
 
 class Category(models.Model):
     """Category model."""
-
+    objects = None
     title = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(null=True, blank=True)
     created_date = models.DateField(auto_now_add=True)
@@ -23,7 +23,6 @@ class Category(models.Model):
 
 class Tag(models.Model):
     """Tag model."""
-
     title = models.CharField(max_length=150)
     slug = models.SlugField(null=True, blank=True)
     created_date = models.DateField(auto_now_add=True)
@@ -38,16 +37,31 @@ class Tag(models.Model):
 
 class Blog(models.Model):
     """Blog model."""
-
-    user = models.ForeignKey(User, related_name="user_blogs", on_delete=models.CASCADE)
-    category = models.ForeignKey(
-        Category, related_name="category_blogs", on_delete=models.CASCADE
+    user = models.ForeignKey(
+        User,
+        related_name='user_blogs',
+        on_delete=models.CASCADE
     )
-    tags = models.ManyToManyField(Tag, related_name="tag_blogs", blank=True)
-    likes = models.ManyToManyField(User, related_name="user_likes", blank=True)
-    title = models.CharField(max_length=250)
+    category = models.ForeignKey(
+        Category,
+        related_name='category_blogs',
+        on_delete=models.CASCADE
+    )
+    tags = models.ManyToManyField(
+        Tag,
+        related_name='tag_blogs',
+        blank=True
+    )
+    likes = models.ManyToManyField(
+        User,
+        related_name='user_likes',
+        blank=True
+    )
+    title = models.CharField(
+        max_length=250
+    )
     slug = models.SlugField(null=True, blank=True)
-    banner = models.ImageField(upload_to="blog_banners")
+    banner = models.ImageField(upload_to='blog_banners')
     description = RichTextField()
     created_date = models.DateField(auto_now_add=True)
 
@@ -66,12 +80,15 @@ class Blog(models.Model):
 
 class Comment(models.Model):
     """Comment model."""
-
     user = models.ForeignKey(
-        User, related_name="user_comments", on_delete=models.CASCADE
+        User,
+        related_name='user_comments',
+        on_delete=models.CASCADE
     )
     blog = models.ForeignKey(
-        Blog, related_name="blog_comments", on_delete=models.CASCADE
+        Blog,
+        related_name='blog_comments',
+        on_delete=models.CASCADE
     )
     text = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
@@ -82,12 +99,15 @@ class Comment(models.Model):
 
 class Reply(models.Model):
     """Reply model."""
-
     user = models.ForeignKey(
-        User, related_name="user_replies", on_delete=models.CASCADE
+        User,
+        related_name='user_replies',
+        on_delete=models.CASCADE
     )
     comment = models.ForeignKey(
-        Comment, related_name="comment_replies", on_delete=models.CASCADE
+        Comment,
+        related_name='comment_replies',
+        on_delete=models.CASCADE
     )
     text = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)

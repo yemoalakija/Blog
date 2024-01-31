@@ -14,14 +14,22 @@ def generate_unique_slug(instance, base_title, new_slug=False, update=False):
         slug = new_slug
 
     if update:
-        slug_exists = model.objects.filter(slug__icontains=slug).exclude(pk=instance.pk)
+        slug_exists = model.objects.filter(
+        slug__icontains=slug
+    ).exclude(pk=instance.pk)
 
     else:
-        slug_exists = model.objects.filter(slug__icontains=slug).exists()
+        slug_exists = model.objects.filter(
+        slug__icontains=slug
+    ).exists()
 
     if slug_exists:
         random_string = "".join(random.choices(string.ascii_lowercase, k=4))
-        new = slugify(base_title + "-" + random_string)
-        return generate_unique_slug(instance, base_title, new_slug=new)
+        new = slugify(base_title + '-' + random_string)
+        return generate_unique_slug(
+            instance,
+            base_title,
+            new_slug=new
+        )
 
     return slug

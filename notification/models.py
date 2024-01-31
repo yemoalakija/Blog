@@ -2,9 +2,10 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
+
 from user_profile.models import User
 
-# Create your models here
+
 class Notificaiton(models.Model):
     """ Notification Model """
     NOTIFICATION_TYPES = ("Blog", "Like", "Follow")

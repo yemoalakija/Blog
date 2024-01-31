@@ -1,7 +1,16 @@
 """ user_profile URL Configuration Options"""
 from django.urls import path
-from user_profile.views import login_use
-from .views import *
+from .views import (
+    login_user,
+    logout_user,
+    register_user,
+    profile,
+    change_profile_picture,
+    view_user_information,
+    follow_or_unfollow_user,
+    user_notifications,
+    mute_or_unmute_user
+)
 
 urlpatterns = [
     path('login/', login_user, name='login'),
