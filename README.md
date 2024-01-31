@@ -50,7 +50,7 @@ Yemo Blog website is designed to seamlessly adapt to various devices, ensuring a
 
 - #### Site Administrator Goals
 
-  - As a Site Administrator, I require comprehensive control over the website, including the ability to publish blogs/news, manage user data, review and moderate comments, oversee site functionality, edit content, and have the authority to remove or delete user accounts when necessary.
+  - As a Site Administrator, my aim is to make every registered user to be able to publish blogs/news, review and moderate comments, oversee site functionality as necessary.
 
 ![Django-admin](yemos/screenshots/Django-admin.png)
 ![Django-admin](yemos/screenshots/admin-comment-approval1.png)
