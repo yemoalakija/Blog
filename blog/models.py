@@ -31,6 +31,7 @@ class Tag(models.Model):
         return str(self.title)
 
     def save(self, *args, **kwargs):
+        """Save method."""
         self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
@@ -69,6 +70,7 @@ class Blog(models.Model):
         return str(self.title)
 
     def save(self, *args, **kwargs):
+        """Save method."""
         updating = self.pk is not None
         if updating:
             self.slug = generate_unique_slug(self, self.title, update=True)

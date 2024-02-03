@@ -176,7 +176,7 @@ def follow_or_unfollow_user(request, user_id):
 @login_required(login_url='login')
 def user_notifications(request):
     """ Returns a list of notifications for the user. """
-    notifications = Notification.objects.filter(
+    notifications = Notificaiton.objects.filter(
         user=request.user,
         is_seen=False
     )
