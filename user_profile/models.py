@@ -5,16 +5,15 @@ from .managers import CustomUserManager
 
 
 class User(AbstractUser):
-    """ User model """
+    """User model"""
+
     email = models.EmailField(
         max_length=150,
         unique=True,
-        error_messages={
-            "unique": "The email must be unique"
-        }
+        error_messages={"unique": "The email must be unique"},
     )
     profile_image = models.ImageField(
-        upload_to="images/", default="../default_profile_jldl6ng"
+        upload_to="images/", default="../default_profile_jldl6n"
     )
     followers = models.ManyToManyField("Follow")
 
@@ -35,16 +34,13 @@ class User(AbstractUser):
 
 
 class Follow(models.Model):
-    """ Follow model """
+    """Follow model"""
+
     followed = models.ForeignKey(
-        User,
-        related_name='user_followers',
-        on_delete=models.CASCADE
+        User, related_name="user_followers", on_delete=models.CASCADE
     )
     followed_by = models.ForeignKey(
-        User,
-        related_name='user_follows',
-        on_delete=models.CASCADE
+        User, related_name="user_follows", on_delete=models.CASCADE
     )
     muted = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
