@@ -79,7 +79,7 @@ I've been using the application [Kanban board](https://kanbantool.com/kanban-boa
 
 <details><summary><b>Kanban Board</b></summary>
 
-![Kanban Image](assets/images/kanbanboard_1.png)
+![Kanban Borad](assets/images/kanbanboard_1.png)
 
 ![User Stories](assets/images/user_story_2.png)
 </details><br/>
@@ -88,24 +88,19 @@ I've been using the application [Kanban board](https://kanbantool.com/kanban-boa
 
 ### Database Schema
 
-I have used a modelling tool called [Graph Models](https://django-extensions.readthedocs.io/en/latest/graph_models.html) to create the database schema. In short it shows the relationships between the different models in the database connected to the application. Graph Models exports a *.dot file which easily can be converted to a more 'easy to read' design with the help of the application [dreampuf](https://dreampuf.github.io/GraphvizOnline/).
+I employed a modeling tool called [Graph Models](https://django-extensions.readthedocs.io/en/latest/graph_models.html) to construct the database schema. In essence, this tool visualizes the intricate relationships between various models within the database, all tied to our application. Graph Models generates a .dot file, which can be conveniently transformed into a more user-friendly design using the dreampuf application.
 
-Models used (besides standard user model) in this project are:
-
-* **Category** - Handles categories. I made a specific model to be able to add more dynamics (create / remove categories going forward in the admin backend instead of 'hard code' it in the code).
-* **Genre** - Handles genres. I made a specific model to be able to add more dynamics (create / remove genres going forward in the admin backend instead of 'hard code' it in the code).
-* **Post** - Handles all the reviews
-* **Comment** - Handles all the comments
-* **UserProfile** - Handles the user profile information (first name, last name, presentation and featured image for the specific user/reviewer). There is a one-to-one relation to the user model to connect it to the standard user model.
+This approach not only simplifies the representation of the database structure but also facilitates better understanding and communication.
 
 <details><summary><b>Database Schema</b></summary>
 
-![Database Schema](readme/assets/images/database_schema.png)
+![Database Schema](assets/images/database_schema.png)
 </details><br/>
 
 # **User Experience (UX)**
 
 ## Wireframes
+
 The wireframes for the site were created in the software [Balsamiq](https://balsamiq.com). The wireframes have been created for desktop, tablet and mobile devices. The text content wasn't finalized during the wireframe process. It's worth mentioning that there are visual differences compared to the wireframes, the reason being design choices that was made during the creation process.
 
 <details><summary><b>Wireframes</b></summary>
@@ -114,6 +109,7 @@ The wireframes for the site were created in the software [Balsamiq](https://bals
 </details><br/>
 
 ## User Stories
+
 Below the user stories for the project are listed to clarify why particular feature matters. These will then be tested and confirmed in the [Testing](<#testing>) section.
 
 ### Site User

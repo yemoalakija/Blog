@@ -13,6 +13,9 @@ idna==3.6
 packaging==23.2
 pillow==10.2.0
 psycopg2==2.9.9
+pydotplus==2.0.2
+pygraphviz==1.12
+pyparsing==3.1.1
 python-dotenv==1.0.1
 requests==2.31.0
 six==1.16.0
