@@ -79,14 +79,15 @@ I've been using the application [Kanban board](https://kanbantool.com/kanban-boa
 
 <details><summary><b>Kanban Board</b></summary>
 
-![Kanban Image](readme/assets/images/kanban.png)
+![Kanban Image](assets/images/kanbanboard_1.png)
 
-![User Stories](readme/assets/images/user_stories.png)
+![User Stories](assets/images/user_story_2.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### Database Schema
+
 I have used a modelling tool called [Graph Models](https://django-extensions.readthedocs.io/en/latest/graph_models.html) to create the database schema. In short it shows the relationships between the different models in the database connected to the application. Graph Models exports a *.dot file which easily can be converted to a more 'easy to read' design with the help of the application [dreampuf](https://dreampuf.github.io/GraphvizOnline/).
 
 Models used (besides standard user model) in this project are:
