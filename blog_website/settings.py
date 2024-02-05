@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'user_profile',
     'notification',
     'ckeditor',
+    'django_extensions',
 ]
 
 SITE_ID = 1
