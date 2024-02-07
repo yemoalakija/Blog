@@ -6,7 +6,7 @@ This dynamic website was meticulously crafted as part of Portfolio Project #4 (F
 
 [View live website here](https://yemos-blog-website-3ef5a934b3dc.herokuapp.com/)
 
-![Yemo Blog responsive design](readme/assets/images/responsive.png)
+![Yemo Blog responsive design](assets/images/responsiveness.png)
 
 ## Table of Content
 
@@ -101,26 +101,25 @@ This approach not only simplifies the representation of the database structure b
 
 ## Wireframes
 
-The wireframes for the site were created in the software [Balsamiq](https://balsamiq.com). The wireframes have been created for desktop, tablet and mobile devices. The text content wasn't finalized during the wireframe process. It's worth mentioning that there are visual differences compared to the wireframes, the reason being design choices that was made during the creation process.
+The wireframes for the website were meticulously crafted using the [Balsamiq](https://balsamiq.cloud) software, encompassing both desktop and mobile interfaces. While the text content remained fluid throughout the wireframing phase, it's essential to note that the finalized design may exhibit variances from the initial wireframes. These differences stem from deliberate design decisions made during the creative process, enhancing the overall aesthetics and user experience.
 
 <details><summary><b>Wireframes</b></summary>
 
-![Wireframes](readme/assets/images/balsamiq.png)
+![Wireframes](assets/images/wireframe.png)
 </details><br/>
 
 ## User Stories
 
-Below the user stories for the project are listed to clarify why particular feature matters. These will then be tested and confirmed in the [Testing](<#testing>) section.
+The user stories for this project are presented below to provide clarity on the significance of each feature. These stories serve as a foundation for testing and validation, which will be thoroughly documented and confirmed in the subsequent [Testing](<#testing>).
 
 ### Site User
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site User | I can view a list of the music reviews so that I can select one to read | &check; |
-| As a Site User | I can view a list of the concert reviews so that I can select one to read | &check; |
-| As a Site User | I can click on a specific review so that I can read it in detail | &check; |
+| As a Site User | I can view a list of posts | &check; |
+| As a Site User | I can post | &check; |
+| As a Site User | I can click on a specific post to read | &check; |
 | As a Site User | I can like and unlike a review so that it is possible for me to interact with the review | &check; |
 | As a Site User | I can view the number of likes on each review so that I can see how popular a specific review is | &check; |
-| As a Site User | I can contact Review Alliance in an easy way so that I can interact with them if I have a need for it | &check; |
 | As a Site User | I can navigate easy on the site through paginated list of posts so that I feel comfortable using the site | &check; |
 | As a Site User | I can view comments on a specific review so that I can read the conversations between different users on the site | &check; |
 | As a Site User | I can sign up an account so that I can like and comment on reviews, create a profile page, create own reviews and edit / remove my reviews | &check; |
@@ -131,7 +130,6 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site User | I can choose to see my own reviews so that I can find them easily | &check; |
 | As a Site User | I can create a new review so that I can contribute to with new content to Review Alliance | &check; |
 | As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
-| As a Site User | I can create draft reviews so that I can finish writing the content later | &check; |
 | As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
 
 ### Site Admin
@@ -150,7 +148,7 @@ Below the user stories for the project are listed to clarify why particular feat
 
 ## Site Structure
 
-The Review | Alliance site is split up in two parts: **when the user is logged out** and **when the user is logged in**. Depending on login status different pages is available for the user. When the user is logged out the pages: *about*, *all*, *albums*, *concerts* are avaliable. When the user is logged in *about*, *all*, *albums*, *concerts*, *create review*, *view my reviews* and *show profile page* are available. If you are logged in as an administrator an *admin area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
+Yemo Blog in two parts: **when the user is logged out** and **when the user is logged in**. Depending on login status different pages is available for the user. When the user is logged out, such user can only view posts, comments, likes but cannot perform any of the mentioned activities EXCEPT logged in. If you are logged in as an administrator an *admin area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
 
 Read more about the different choices in the [Features](<#features>) section.
 
