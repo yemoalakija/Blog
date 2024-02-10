@@ -10,52 +10,73 @@ This dynamic website was meticulously crafted as part of Portfolio Project #4 (F
 
 ## Table of Content
 
-* [**Project**](<#project>)
-    * [Objective](<#objective>)
-    * [Site Users Goal](<#site-users-goal>)
-    * [Site Owners Goal](<#site-owners-goal>)
-    * [Project Management](<#project-management>)
-
-* [**User Experience (UX)**](<#user-experience-ux>)
-    * [Wireframes](<#wireframes>)
-    * [User Stories](<#user-stories>)
-    * [Site Structure](<#site-structure>)
-    * [Design Choices](<#design-choices>)
-
-* [**Existing Features**](<#existing-features>)
-    * [Navigation](<#navigation>)
-    * [About](<#about>)
-    * [All](<#all>)
-    * [Albums](<#albums>)
-    * [Concerts](<#concerts>)
-    * [Review Detail View](<#review-detail-view>)
-    * [Update / Delete Comment](<#update-and-delete-comment>)
-    * [Member Reviews](<#member-reviews>)
-    * [Create Review](<#create-review>)
-    * [Update Review](<#update-review>)
-    * [Profile Page](<#profile-page>)
-    * [Admin Area](<#admin-area>)
-    * [Sign Up](<#sign-up>)
-    * [Sign In](<#sign-in>)
-    * [Sign Out](<#sign-out>)
-    * [Footer](<#footer>)
-    * [Flash Messages](<#flash-messages-and-confirmation-pages-to-the-user>)
-
-* [**Features Left To Implement**](<#features-left-to-implement>)
-
-* [**Technologies Used**](<#technologies-used>)
-    * [Languages](<#languages>)
-    * [Frameworks & Software](<#frameworks--software>)
-    * [Libraries](<#libraries>)
-
-* [**Testing**](<#testing>)
-    * [Testing User Stories](<#testing-user-stories>)
-    * [Code Validation](<#code-validation>)
-    * [Additional Testing](<#additional-testing>)
-    * [Known Bugs](<#known-bugs>)
-* [Deployment](<#deployment>)
-* [Credits](<#credits>)
-* [Acknowledgements](<#acknowledgements>)
+- [**Yemo Blog | Website**](#yemo-blog--website)
+  - [Table of Content](#table-of-content)
+  - [**Project**](#project)
+  - [Objective](#objective)
+  - [Site Users Goal](#site-users-goal)
+  - [Site Owners Goal](#site-owners-goal)
+  - [Project Management](#project-management)
+    - [Kanban Board](#kanban-board)
+    - [Database Schema](#database-schema)
+- [**User Experience (UX)**](#user-experience-ux)
+  - [Wireframes](#wireframes)
+  - [User Stories](#user-stories)
+    - [Site User](#site-user)
+    - [Site Admin](#site-admin)
+  - [Site Structure](#site-structure)
+  - [Design Choices](#design-choices)
+- [**Features**](#features)
+  - [**Existing Features**](#existing-features)
+    - [**Navigation**](#navigation)
+    - [**About**](#about)
+    - [**All**](#all)
+    - [**Albums**](#albums)
+    - [**Concerts**](#concerts)
+    - [**Review Detail View**](#review-detail-view)
+    - [**Update And Delete Comment**](#update-and-delete-comment)
+    - [**Member Reviews**](#member-reviews)
+    - [**Create Review**](#create-review)
+    - [**Update Review**](#update-review)
+    - [**Profile Page**](#profile-page)
+    - [**Admin Area**](#admin-area)
+    - [**Sign Up**](#sign-up)
+    - [**Sign In**](#sign-in)
+    - [**Sign Out**](#sign-out)
+    - [**Footer**](#footer)
+    - [**Flash Messages and confirmation pages to the user**](#flash-messages-and-confirmation-pages-to-the-user)
+    - [Features Left to Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Frameworks \& Software](#frameworks--software)
+  - [Libraries](#libraries)
+- [Testing](#testing)
+  - [Testing User Stories](#testing-user-stories)
+  - [Code Validation](#code-validation)
+    - [Markup Validation](#markup-validation)
+    - [CSS Validaton](#css-validaton)
+    - [PEP Validation](#pep-validation)
+    - [JavaScript Validation](#javascript-validation)
+  - [Additional Testing](#additional-testing)
+    - [Manual Testing](#manual-testing)
+    - [Automated Testing](#automated-testing)
+    - [Responsiveness Test](#responsiveness-test)
+    - [Browser Compatibility](#browser-compatibility)
+    - [Lighthouse](#lighthouse)
+    - [WAVE](#wave)
+    - [a11y Color Contrast Accessibility Validator](#a11y-color-contrast-accessibility-validator)
+    - [Peer Review](#peer-review)
+  - [Known bugs](#known-bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+  - [Deployment To Heroku](#deployment-to-heroku)
+  - [How To Fork The Repository On GitHub](#how-to-fork-the-repository-on-github)
+  - [Cloning And Setting Up This Project](#cloning-and-setting-up-this-project)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Technical](#technical)
+- [Acknowledgements](#acknowledgements)
 
 ## **Project**
 
@@ -158,20 +179,17 @@ Read more about the different choices in the [Features](<#features>) section.
 
 * ### Color Scheme
 
-The color scheme chosen for the 'Review | Alliance' site was based on the Bootstrap dark background. The colors are Black (used on some text elements), Raisin Black (top navigation and footer), Rocket Metallic (used on some of the text elements), Cultured (used very rarely in this project) and White (used i.e. as background and card background). All colors are very clean and they create a professional look together and offers a good readability and contrast as well. I used the online service [Coolors](https://coolors.co/) to choose the color scheme.
+The color scheme chosen for Yemo Blog site was based on Bootstrap colour scheme and my personal reference.
 
-![Color Palette image](readme/assets/images/coolors_palette.png)
+![Color Palette image](assets/images/coolors_palette.png)
 
 * ### Typography
-The fonts used for the site are 'Roboto' and 'Tinos'. Fallback font for both of them is sans-serif.
 
-* 'Roboto' is used on all headlines including the brand logo. It's a very clean font that works really well for headlines and logos. It's easy to read and matches the minimalistic style that I wanted the site to 'breath'.
+The fonts used for the site is 'Roboto', which is sans-serif.
 
-* 'Tinos' was chosen for the review excerpt and the review full text. It has a nice serif design and works really well for longer paragraphs of text.
+* 'Roboto' is used generally in the website with different weigth as needed. It's easy to read and matches the minimalistic style that I wanted the site to have.
 
-![Google Fonts Impact](readme/assets/images/google_fonts_roboto.png)
-
-![Google Fonts Tinos](readme/assets/images/google_fonts_tinos.png)
+![Google Fonts Impact](assets/images/google_fonts_roboto.png)
 
 [Back to top](<#table-of-content>)
 
@@ -1127,6 +1145,6 @@ To clone and set up this project you need to follow the steps below.
 # Acknowledgements
 This fictional site was created for Portfolio Project #4 (Full-Stack Tolkin) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
 
-*Marcus Eriksson, 2022-10-18*
+*Adeyemo Alakija, 2022-10-18*
 
 [Back to top](<#table-of-content>)
