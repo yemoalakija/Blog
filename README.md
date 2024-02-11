@@ -174,7 +174,10 @@ Read more about the different choices in the [Features](<#features>) section.
 
 The color scheme chosen for Yemo Blog site was based on Bootstrap colour scheme and my personal reference.
 
+<details><summary><b>Color Scheme</b></summary>
+
 ![Color Palette image](assets/images/coolors_palette.png)
+</details><br/>
 
 * ### Typography
 
@@ -182,7 +185,10 @@ The fonts used for the site is `Roboto`, which is sans-serif.
 
 * `Roboto` is used generally in the website with different weigth as needed. It's easy to read and matches the minimalistic style that I wanted the site to have.
 
-![Google Fonts Impact](assets/images/google_fonts_roboto.png)
+<details><summary><b>Google Font - Roboto</b></summary>
+
+![Google Fonts Roboto](assets/images/google_fonts_roboto.png)
+</details>
 
 [Back to top](<#table-of-content>)
 
@@ -294,7 +300,7 @@ The logout is carefully crafted, once clicked on, it logout the user.
 
 <details><summary><b>Logout</b></summary>
 
-![Member Reviews](assets/images/sign_out.png)
+![Logout](assets/images/sign_out.png)
 </details><br/>
 
 ### **Footer**
