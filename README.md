@@ -29,13 +29,6 @@ This dynamic website was meticulously crafted as part of Portfolio Project #4 (F
 - [**Features**](#features)
   - [**Existing Features**](#existing-features)
     - [**Navigation**](#navigation)
-    - [**About**](#about)
-    - [**All**](#all)
-    - [**Albums**](#albums)
-    - [**Concerts**](#concerts)
-    - [**Review Detail View**](#review-detail-view)
-    - [**Update And Delete Comment**](#update-and-delete-comment)
-    - [**Member Reviews**](#member-reviews)
     - [**Create Review**](#create-review)
     - [**Update Review**](#update-review)
     - [**Profile Page**](#profile-page)
@@ -194,138 +187,65 @@ The fonts used for the site is 'Roboto', which is sans-serif.
 [Back to top](<#table-of-content>)
 
 # **Features**
+
 The features of the site are listed below.
 
 ## **Existing Features**
 
 ### **Navigation**
-The navigation bar is very clean and straight forward. Depending if you  are logged in or not different menus are visible for the site user. An extra menu item is visible if you are logged in as an administrator.
 
-*Links that are visible to logged out users*
+The navigation bar is very clean and straight forward. Depending if you  are logged in or not different menus are visible for the site user. If a user login, the user has the ability to post, comment, etc. An extra menu item is visible if you are logged in as an administrator.
 
-* About - Includes information about Review | Alliance and presents the reviewers that are registered.
-* All - Lists all reviews on the site independent of category type of review.
-* Albums - Lists all album reviews.
-* Concerts - Lists all concert reviews.
-* Login / Sign Up - Gives the user the opportunity to log in or sign up if not ready a registered user at Review | Alliance.
+*Links that are visible to logged out users**
 
-<details><summary><b>Navigation Large - User Not Logged In</b></summary>
+* Home - The home page.
+* Blogs - Lists all available blogs.
+* Category - Blogs category.
+* Search - Makes blogs search possible.
+* Login / Sign Up - Gives the user the opportunity to log in or sign up if not ready a registered user at Yemo Blog.
 
-![Navigation Large - User Not Logged In](readme/assets/images/navbar_large_not_logged_in.png)
-</details><br/>
+<details><summary><b>Navigation - User Not Logged In</b></summary>
 
-<details><summary><b>Navigation Small - User Not Logged In</b></summary>
-
-![Navigation Small - User Not Logged In](readme/assets/images/navbar_small_not_logged_in.png)
+![Navigation Small - User Not Logged In](assets/images/navbar_small_not_logged_in.png)
 </details><br/>
 
 *Links that are visible to logged in users*
 
 All of the links that are visible to a not logged in user plus the ones below.
 
-* Create New Review - Lets the user create a new review.
-* View My Reviews - Lists all reviews created by the logged in user.
-* Show Profile Page - Shows logged in users profile page.
+* Create New Post - Lets the user create a new blog post.
+* Comment/Reply - Lists all comments/replies to a blog post.
+* Profile Page - Shows logged in users profile page.
 * Log Out - Logs out the user.
 
 <details><summary><b>Navigation Large - User Logged In</b></summary>
 
-![Navigation Large - User Logged In](readme/assets/images/navbar_large_logged_in.png)
+![Navigation - User Logged In](images/navbar_large_logged_in.png)
 </details><br/>
 
-<details><summary><b>Navigation Small - User Logged In</b></summary>
-
-![Navigation Small - User Logged In](readme/assets/images/navbar_small_logged_in.png)
-</details><br/>
-
-*Link that is visible if user is administrator*
+*Links that are visible if a user is an administrator*
 
 All of the links above plus the one below.
-* Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can publish / unpublish / approve / unapprove reviews and approve / unapprove comments.
+
+* Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can publish / unpublish / approve / unapprove reviews, approve / unapprove comments and delete blog posts.
 
 <details><summary><b>Navigation Large - Admin Logged In</b></summary>
 
-![Navigation Large - Admin Logged In](readme/assets/images/navbar_large_admin_logged_in.png)
-</details><br/>
-
-<details><summary><b>Navigation Small - Admin Logged In</b></summary>
-
-![Navigation Small - Admin Logged In](readme/assets/images/navbar_small_admin_logged_in.png)
-</details><br/>
-
-### **About**
-In the about section the user can read about both who Review | Alliance are but also about all reviewers that are registered on the site.
-
-<details><summary><b>About Section</b></summary>
-
-![About](readme/assets/images/about.png)
-</details><br/>
-
-### **All**
-This page lists all the reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. The page shows 6 cards on bigger screens before a pagination mechanism kicks in. On smaller screens the cards are stacked vertically.
-
-<details><summary><b>All Reviews - User Logged Out</b></summary>
-
-![All Reviews - User Logged Out](readme/assets/images/all_reviews_logged_out.png)
-</details><br/>
-
-<details><summary><b>All Reviews - User Logged In</b></summary>
-
-![All Reviews - User Logged In](readme/assets/images/all_reviews_logged_in.png)
-</details><br/>
-
-### **Albums**
-This page lists all the album reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. No screenshots for this view due to the fact it's the same concept as in the all reviews section except that the review cards are filtered on the category 'album'.
-
-### **Concerts**
-This page lists all the concert reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. No screenshots for this view due to the fact it's the same concept as in the all reviews section except that the review cards are filtered on the category 'concert'.
-
-### **Review Detail View**
-The review detail shows the details about the review that the user has chosen in the all, albums or concert view. Depending on if the user is logged in the view looks a little bit different. If the user is logged in they get the possibility to like the review and also update and delete it if they have written it. A logged in user can also leave a comment (and update / delete their own comment as well).
-
-<details><summary><b>Review Detail View - User Logged Out</b></summary>
-
-![Review Detail View - User Logged Out](readme/assets/images/review_detail_logged_out.png)
-![Review Detail View Comment - User Logged Out](readme/assets/images/review_detail_comment_logged_out.png)
-</details><br/>
-
-<details><summary><b>Review Detail View - User Logged In</b></summary>
-
-![Review Detail View - User Logged In](readme/assets/images/review_detail_logged_in.png)
-![Review Detail View Comment - User Logged In](readme/assets/images/review_detail_comment_logged_in.png)
-</details><br/>
-
-### **Update And Delete Comment**
-If the user is logged in and has written a comment there is a possibility to edit and delete the comment. When the comment has been updated it needs to be re-approved by Review | Alliance.
-
-<details><summary><b>Update Comment</b></summary>
-
-![Update Comment](readme/assets/images/update_comment.png)
-</details><br/>
-
-### **Member Reviews**
-The Member Review Page lists the reviews that the logged in user has written. The user can update and delete their review on this page and also gets information about the status of the review. There are 4 different statuses:
-
-* *Your review is awaiting approval* - Review has been submitted with the status 'published' and awaits approval
-* *Your review is in draft status but is approved* - The review is in draft status but has been approved
-* *Your review is published and approved* - The review is published and approved
-* *Your review is in draft status* - The review has been submitted with the status 'draft'
-
-<details><summary><b>Member Reviews</b></summary>
-
-![Member Reviews](readme/assets/images/member_reviews.png)
+![Navigation Small - Admin Logged In](assets/images/navbar_small_admin_logged_in.png)
 </details><br/>
 
 ### **Create Review**
-On this page the registered and logged in user can create their own review. When they have sent it in Review | Alliance needs to approve it, until it's approved it will not be visible for the public.
 
-<details><summary><b>Create Review</b></summary>
+On this page the registered and logged in user can create their own blog and post it.
 
-![Create Review](readme/assets/images/create_review.png)
+<details><summary><b>Create Blog</b></summary>
+
+![Add Blog](images/create_review.png)
 </details><br/>
 
 ### **Update Review**
-On this page the registered and logged in user can update their own review. When they have updated it in Review | Alliance needs to re-approve it, until it's re-approved it will not be visible for the public.
+
+On this page the registered and logged in user can update their own blog posts.
 
 <details><summary><b>Update Review</b></summary>
 
@@ -333,71 +253,75 @@ On this page the registered and logged in user can update their own review. When
 </details><br/>
 
 ### **Profile Page**
-On this page the user can view and update their own profile page. The profile is visible in the about section.
+
+On this page the user can view and update their own profile page. And update passwords.
 
 <details><summary><b>Profile Page</b></summary>
 
-![Profile Page](readme/assets/images/update_profile.png)
+![Profile Page](assets/images/update_profile.png)
 </details><br/>
 
 ### **Admin Area**
-On this page the administrator (or other superuser decided by Review | Alliance) can *approve* / *unapprove* / *publish* / *unpublish* and *delete* reviews and comments. General information about *number of users*, *number of comments*, *number of reviews*, *unapproved comments / reviews* is also being showed on the page.
+
+On this page the administrator (or other superuser decided by Yemo Blog) can *approve* / *unapprove* / *publish* / *unpublish* and *delete* blog posts, comments etc. General information about *number of users*, *number of comments*, *number of reviews*, *unapproved comments / reviews* is also being showed on the page.
 
 <details><summary><b>Admin Area</b></summary>
 
-![Admin Area](readme/assets/images/admin_area.png)
+![Admin Area](assets/images/admin_area.png)
 </details><br/>
 
 ### **Sign Up**
-If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
+
+If the site visitor has no registered user at Yemo Blog, they can sign up.
 
 <details><summary><b>Sign Up</b></summary>
 
-![Sign Up](readme/assets/images/sign_up.png)
+![Sign Up](assets/images/sign_up.png)
 </details><br/>
 
 ### **Sign In**
-On this page the user can sign in to Review | Alliance
+
+On this page the user can sign in to Yemo Blog website.
 
 <details><summary><b>Sign In</b></summary>
 
-![Sign In](readme/assets/images/sign_in.png)
+![Sign In](assets/images/sign_in.png)
 </details><br/>
 
 ### **Sign Out**
-When the user clicks sign out in the menu bar a confirmation page is being showed so that the user don't accidently sign out.
 
-<details><summary><b>Sign Out</b></summary>
+The logout is carefully crafted, once clicked on, it logout the user.
 
-![Member Reviews](readme/assets/images/sign_out.png)
+<details><summary><b>Logout</b></summary>
+
+![Member Reviews](assets/images/sign_out.png)
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Review | Alliance, contact information and links to relevant social media.
+
+The footer area includes short information about Yemo Blog contact information and links to relevant social media.
 
 <details><summary><b>Footer</b></summary>
 
-![Footer](readme/assets/images/footer.png)
+![Footer](assets/images/footer.png)
 </details><br/>
 
 ### **Flash Messages and confirmation pages to the user**
+
 The sites incorporates flash messages and confirmation pages when an action has been performed (i.e. delete/update actions). Examples of this in the screenshots below.
 
 <details><summary><b>Confirmation Messages</b></summary>
 
-![Review Created Success](readme/assets/images/review_created_success.png)
-![Review Deleted Success](readme/assets/images/review_deleted_success.png)
+![Review Created Success](assets/images/review_created_success.png)
+![Review Deleted Success](assets/images/review_deleted_success.png)
 </details><br/>
 
 ### Features Left to Implement
 
 * Add more automated testing
 * Add 'current page is active' in navbar
-* Search reviews functionality from the navbar
-* Information in the about section how many reviews each reviewer has made
-* Add / remove genre and category in admin section
 * Add image resize functionality
-* Remove admin approval of comments
+* And few other features to be explored after
 
 [Back to top](<#table-of-content>)
 
@@ -411,23 +335,20 @@ The sites incorporates flash messages and confirmation pages when an action has 
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides interactive elements of the website
 
 ## Frameworks & Software
+
 * [Bootstrap](https://getbootstrap.com/) - A CSS framework that helps building solid, responsive, mobile-first sites
 * [Django](https://www.djangoproject.com/) - A model-view-template framework used to create the Review | Alliance site
 * [Balsamiq](https://balsamiq.com/) - Used to create the wireframe.
-* [Microsoft Excel](https://www.microsoft.com/sv-se/microsoft-365/excel) - Used to create testing scenarios.
 * [Github](https://github.com/) - Used to host and edit the website.
-* [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) - Terminal in [Gitpod](https://www.gitpod.io) used to push changes to the GitHub repository.
+* [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) - Terminal in [GitHub Codespace](https://www.github.com) used to create, edit and push changes to the GitHub repository.
 * [Heroku](https://en.wikipedia.org/wiki/Heroku) - A cloud platform that the application is deployed to.
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - Used to test performance of site.
-* [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used for responsiveness check.
-* [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org/) - Used to validate the sites accessibility.
+* [Am I Responsive](https://www.amresponsive.com/) - Used for responsiveness check.
 * [a11y Color Contrast Accessibility Validator](https://color.a11y.com/Contrast/) - Used to test color contrast on the site
 * [Graph Models](https://django-extensions.readthedocs.io/en/latest/graph_models.html) - Used to create a *.dot file of all models in the project.
-* [dreampuf](https://dreampuf.github.io/GraphvizOnline/) - Creates visually appealing database diagrams of *.dot files.
 * [Favicon](https://favicon.io/) - Used to create the favicon.
-* [VSCode](https://code.visualstudio.com/) - Used to create and edit the site.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to debug and test responsiveness.
-* [Trello](https://trello.com/en-GB) - A project management tool to organize the project.
+* [Kanban Board](https://kanbanboard.com/) - A project management tool to organize the project.
 * [Cloudinary](https://cloudinary.com/) - A service that hosts all static files in the project.
 * [HTML Validation](https://validator.w3.org/) - Used to validate HTML code
 * [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code
@@ -452,9 +373,6 @@ The libraries used in this project are located in the requirements.txt file and 
 * [psycopg2](https://pypi.org/project/psycopg2/) - Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 * [PyJWT](https://pypi.org/project/PyJWT/) - A Python implementation of RFC 7519.
 * [pylint-django-2.5.3](https://pypi.org/project/pylint-django/) - A Pylint plugin for improving code analysis when analysing code using Django.
-* [pylint-plugin-utils-0.7](https://pypi.org/project/pylint-plugin-utils/) - This is not a direct Pylint plugin, but rather a set of tools and functions used by other plugins such as pylint-django.
-* [python3-openid](https://pypi.org/project/python3-openid/) - OpenID support for modern servers and consumers.
-* [pytz](https://pypi.org/project/pytz/) - This is a set of Python packages to support use of the OpenID decentralized identity system in your application, update to Python 3
 * [requests-oauhlib](https://pypi.org/project/requests-oauthlib/) - P    rovides first-class OAuth library support for Requests.
 * [sqlparse](https://pypi.org/project/sqlparse/) - sqlparse is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements.
 * [cryptography-3.3.23](https://pypi.org/project/cryptography/3.3/) - Cryptography is a package which provides cryptographic recipes and primitives to Python developers.
@@ -463,68 +381,41 @@ The libraries used in this project are located in the requirements.txt file and 
 
 ## Testing User Stories
 
-* As a Site User | I can view a list of the music reviews so that I can select one to read
-    * At the top of the site there is a navigation bar with a link that lists all reviews when the user clicks on it.
+* As a Site User | I can view a list of blog post so that I can select one to read
+    * At the top of the site there is a navigation bar with a link that lists all blog posts when the user clicks on it.
 
-* As a Site User | I can view a list of the concert reviews so that I can select one to read
-   * At the top of the site there is a navigation bar with a link that lists all concert reviews when the user clicks on it.
+* As a Site User | I can click on a specific post so that I can read it in detail
+   * At the top of the site there is a navigation bar with a link that lists all blogs post.
 
-* As a Site User | I can click on a specific review so that I can read it in detail
-   * At the top of the site there is a navigation bar with a link that lists all album reviews when the user clicks on it.
+* As a Site User | I can like and unlike a post so that it is possible for me to interact with the comments
+    * When the user is logged it is possible to click on a heart on the blog detail page to like / unlike a review.
 
-* As a Site User | I can like and unlike a review so that it is possible for me to interact with the review
-    * When the user is logged it is possible to click on a heart on the review detail page to like / unlike a review.
-
-* As a Site User | I can view the number of likes on each review so that I can see how popular a specific review is
-    * On the review detail page the user can see how many likes the specific review has.
-
-* As a Site User | I can contact Review Alliance in an easy way so that I can interact with them if I have a need for it
-    * In the footer there is clear information about how to contact Review | Alliance.
+* As a Site User | I can view the number of likes on each blog so that I can see how popular a specific review is
+    * On the blog detail page the user can see how many likes the specific blog has.
 
 * As a Site User | I can navigate easy on the site through paginated list of posts so that I feel comfortable using the site
-    * On the review pages the pagination is activated when there are more than 6 reviews on a page.
+    * On the blogs pages the pagination is activated when there are more than 4 blogs post on a page.
 
-* As a Site User | I can view comments on a specific review so that I can read the conversations between different users on the site
-    * When the user clicks on a specific review the comment section can, in an easily way, be viewed.
+* As a Site User | I can view comments on a specific blog so that I can read the conversations between different users on the site
+    * When the user clicks on a specific blog, the comment section can, in an easily way, be viewed.
 
-* As a Site User | I can sign up an account so that I can like and comment on reviews, create a profile page, create own reviews and edit / remove my reviews
+* As a Site User | I can sign up an account so that I can like and comment on blogs, create a profile page, create own reviews and edit / remove my blog
     * In the navigation bar the user can click the Login / Sign up link to either login or sign up for a new account. When this is done the user can interact on the page as stated in the user story).
 
-* As a Site User | I can create a profile page so that other reviewers can read about who I am
-    * If a user is registered and logged in there is a 'Show Profile'-page in the navigation menu where the user can fill in profile details. The profile is shown for the site users in the about section.
+* As a Site User | I can create a profile page so that other bloggers can read about who I am
+    * If a user is registered and logged in there is a 'Show Profile'-page in the navigation menu where the user can fill in profile details. The profile is shown for the site users in the blog posts.
 
 * As a Site User | I can comment on a review so that I can be involved in the conversation
-    * When the user is logged in they can write a comment on a specific review on the review detail page.
-
-* As a Site User | I can edit my comment so that I can change the content if needed
-    * When the user is logged in an edit button appears on the all comments that the specific user has written. When the user clicks the edit button they can change the content in the comment.
-
-* As a Site User | I can remove my review so that I have full control of my reviews
-    * When the user is logged in a delete button appears on the all comments that the specific user has written. When the user clicks the delete button they get the option to delete the comment.
-
-* As a Site User | I can choose to see my own reviews so that I can find them easily
-    * When a user is logged in they can choose to view their own reviews through the link 'My Reviews'.
-
-* As a Site User | I can create a new review so that I can contribute to with new content to Review Alliance
-    * When a user is logged in they can create a new review through the 'Create New Review'-link in the navigation bar.
-
-* As a Site User | I can log out from the site so that I can feel safe that nobody can access my information
-    * When the user is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
-
-* As a Site User | I can create draft reviews so that I can finish writing the content later
-    * When a logged in user creates a review they have the possibility to set the status on the review either on published or draft.
-
-* As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
-    * When the user sign in, sign out, create / update / deletes reviews and comments they always get a confirmation message to secure visual feedback.
+    * When the user is logged in they can write a comment on a specific blog.
 
 * As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information
    * When the admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
-* As a Site Admin | I can create, read, update and delete reviews so that I can manage my review content
-    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can read, update and delete reviews. Creation of reviews can be made the same way as any logged in user. Updating reviews can only be made if the administrator has written the original review.
+* As a Site Admin | I can create, read, update and delete blogs post so that I can manage my review content
+    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can read, update and delete blogs. Creation of blogs can be made the same way as any logged in user. Updating blogs can only be made if the administrator has written the original blog.
 
 * As a Site Admin | I can approve reviews so that I can secure high quality of the content
-    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can approve / unapprove / publish / unpublish reviews.
+    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can approve / unapprove / publish / unpublish blogs.
 
 * As a Site Admin | I can approve and disapprove comments so that I can secure a safe environment for the Site Users
     * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can approve / unapprove comments.
@@ -533,50 +424,49 @@ The libraries used in this project are located in the requirements.txt file and 
     * When a user is logged in as an administrator they have the possibility to create a review they and set the status to published or draft.
 
 * As a Site Admin | I can access an admin area so that I can get a general understanding of logged in users, number of likes and number of posts
-    * In the admin area there is an summary area in the top with general information about the site (i.e. number of users, number of reviews / comments that need approval)
-
-* As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
-    * When the admin signs in, signs out, create / update / deletes reviews and comments they always get a confirmation message to secure visual feedback.
+    * In the admin area there is an summary area in the top with general information about the site (i.e. number of users, number of blogs / comments that need approval)
 
 ## Code Validation
-The code on the 'Review | Alliance' site has been tested through W3C Markup Validation Service, W3C CSS Validation Service and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
+
+The code on the 'Yemo Blog' site has been tested through W3C Markup Validation Service, W3C CSS Validation Service and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section).
 
 ### Markup Validation
+
 After fixing the inital errors that W3C Markup Validation Service reported, no errors were returned.
 
 <details><summary><b>HTML Validation Result</b></summary>
 
-![HTML Result Home Page](readme/assets/images/html_validation_no_error.png)
+![HTML Result Home Page](assets/images/html_validation_no_error.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### CSS Validaton
+
 When validating my own code the W3C CSS Validator reports no errors.
 
 <details><summary><b>CSS Validation Result</b></summary>
 
-![CSS Result](readme/assets/images/css_validation_no_error.png)
+![HTML Result Home Page](assets/images/html_validation_no_error.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### PEP Validation
-At the time of this project the website [pep8online](http://pep8online.com/) is currently offline. Usually I'm using that site to validate my Python code. Due to the site being offline I have followed Code Institutes workaround to add the PEP8 validator 'pycodestyle' to the Gitpod Workspace. I have tested the following Python files:
 
-* admin.py - No errors or warnings reported
-* forms.py - No errors or warnings reported
-* models.py - No errors or warnings reported
-* test_forms.py - No errors or warnings reported
-* urls.py - No errors or warnings reported
-* views.py - No errors or warnings reported
+No errors report.
+<details><summary><b>PEP Validation Result</b></summary>
+
+![PEP Result](assets/images/pep_validation_no_error.png)
+</details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### JavaScript Validation
+
 The JSHint validator results can be seen below:
 
-No errors were returned when passing through JSHint (script.js) but the test reported one undefined variable connected to Bootstrap which is no problem.
+No errors were returned when passing through JSHint (script.js).
 
 <details><summary><b>JSHint Validation Result</b></summary>
 
@@ -589,7 +479,7 @@ No errors were returned when passing through JSHint (script.js) but the test rep
 
 ### Manual Testing
 
-In addition to tests stated above I have performed a series of manual tests. Below the list of tests that has been conducted can be found.
+In addition to tests stated above I have performed a few manual tests. Below the list of tests that has been conducted can be found.
 
 | Status | **Main Website - User Logged Out**
 |:-------:|:--------|
@@ -597,48 +487,17 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Pasting page that needs authentication loads a forbidden page
 | &check; | Clicking the nav logo loads the home page
 | &check; | Clicking the Home button on the nav bar loads the home page and lists all reviews
-| &check; | Clicking the All button on the nav bar lists all reviews
-| &check; | Clicking the Albums button on the nav bar lists all album reviews
-| &check; | Clicking the Concert button on the nav bar lists all concert reviews
-| &check; | Clicking the Log In / Sign Up loads the sign up page
-| &check; | 6 Reviews are rendered for the user on all / albums / concert page before pagination kicks in
-| &check; | Clicking the Read More button on the a review card loads the review detail page
-| &check; | In the details view the user cannot create a comment
-| &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
-| &check; | Clicking the YouTube link in the footer area opens YouTube in a new window
-| &check; | Clicking the LinkedInlink in the footer area opens LinkedIN in a new window
-| &check; | Clicking the Twitter link in the footer area opens Twitter in a new window
+| &check; | Clicking the All button on the nav bar lists all blogs
 
 | Status | **Main Website - User Logged In**
 |:-------:|:--------|
 | &check; | Typing in a incorrect URL on the page loads the 404 error page
 | &check; | Pasting page that needs authentication loads a forbidden page
 | &check; | Clicking the nav logo loads the home page
-| &check; | Clicking the Home button on the nav bar loads the home page and lists all reviews
-| &check; | Clicking the All button on the nav bar lists all reviews
-| &check; | Clicking the Albums button on the nav bar lists all album reviews
-| &check; | Clicking the Concert button on the nav bar lists all concert reviews
-| &check; | 6 Reviews are rendered for the user on all / albums / concert page before pagination kicks in
-| &check; | Clicking the Read More button on the a review card loads the review detail page
-| &check; | In the detail view the logged in user can comment a review
-| &check; | When user submits a comment a message with approval information is being showed on the page
-| &check; | In the detail view the logged in user can update/delete the comments written by themselves
-| &check; | Clicking the update button loads the update comment page
-| &check; | Clicking the delete button loads the delete comment page
-| &check; | In the detail view the logged in user can like/unlike reviews
-| &check; | In the detail view the logged in user can update/delete the reviews written by themselves
-| &check; | Clicking the update button in the detail view loads the update review page
-| &check; | Clicking the delete button in the detail view loads the delete review page
-| &check; | Clicking the My Reviews button in the logged in user menu lists the logged in users reviews
-| &check; | Clicking the update button in the My Reviews view loads the update review page
-| &check; | Clicking the delete button in the My Reviews view loads the delete review page
-| &check; | In the My Reviews view the information about the review status is correct
+| &check; | Clicking the Home button on the nav bar loads the home page and lists all blogs
+| &check; | In the detail view the logged in user can comment on a blog
 | &check; | In the logged in user menu the Admin Area is not visible
 | &check; | Clicking the Show Profile Page button in the logged in user menu loads the My Profile page
-| &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
-| &check; | Clicking the YouTube link in the footer area opens YouTube in a new window
-| &check; | Clicking the LinkedInlink in the footer area opens LinkedIN in a new window
-| &check; | Clicking the Twitter link in the footer area opens Twitter in a new window
 
 | Status | **Main Website - Admin Logged In**
 |:-------:|:--------|
@@ -646,36 +505,20 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | In the review section. Clicking the approve / unapprove / publish / unpublish toggles the approve and status signs
 | &check; | The view button is only visible if a review is published
 | &check; | In the comment section. Clicking the approve / unapprove toggles the approve and status signs
-| &cross; | When clicking delete / add genre the appropiate page loads and shows success page after submit
 | &check; | Total Users shows correct number of total users
-| &check; | Total Reviews shows the correct number of total reviews
+| &check; | Total blog shows the correct number of total blogs
 | &check; | Total Comments shows the correct number of total comments
 | &check; | Reviews that need approval shows the correct numer of reviews that need approval
-| &check; | Comments that need approval shows the correct numer of comments that need approval
+| &check; | Comments that need approval shows the correct number of comments that need approval
 
- Status | **Create A Review - User Logged In**
+ Status | **Create A Blog - User Logged In**
 |:-------:|:--------|
 | &check; | Title field is required
 | &check; | Title field does not accept empty field
 | &check; | Title field does not accept just spaces
-| &check; | Artist field is required
-| &check; | Artist field does not accept empty field
-| &check; | Artist field does not accept just spaces
-| &check; | Featured Image is not required
-| &check; | Fragment field is required
-| &check; | Fragment field does not accept empty field
 | &check; | Body field is required
 | &check; | Body field does not accept empty field
 | &check; | Category field defaults to Uncategorized
-| &check; | Fragment field is required
-| &check; | Fragment field does not accept empty field
-| &check; | Record Label is not required
-| &check; | Venue is not required
-| &check; | Genre field defaults to Uncategorized
-| &check; | Rating field defaults to 3
-| &check; | Status field defaults to Draft
-| &check; | Posting as shows name of logged in user
-| &check; | Review Success Page is displayed when the user submits the review and the form validation is ok.
 
 Status | **Create A New User - User Logged Out**
 |:-------:|:--------|
@@ -690,23 +533,21 @@ Status | **Create A New User - User Logged Out**
 Status | **Create A Profile Page - User Logged In**
 |:-------:|:--------|
 | &check; | Default featured image is visible the first time a user opens the 'my profile' page
-| &check; | First Name field is required
-| &check; | First Name field does not accept empty field
-| &check; | First Name field does not accept just spaces
-| &check; | Last Name field is required
+| &check; | First Name field is not required as it has already been provided when creating account
+| &check; | Last Name field is not required
 | &check; | Last Name field does not accept empty field
-| &check; | Last Name field does not accept just spaces
-| &check; | Update profile success Page is displayed when the user submits the profile form
 
 ### Automated Testing
-Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python3 manage.py test*
+
+Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python manage.py test*
 
 <details><summary><b>Automated Testing</b></summary>
 
-![Automated Testing](readme/assets/images/test_coverage_report.png)
+![Automated Testing](assets/images/test_coverage_report.png)
 </details><br/>
 
 ### Responsiveness Test
+
 The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 
 | Desktop    | Display <1280px       | Display >1280px    |
@@ -730,43 +571,37 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 [Back to top](<#table-of-content>)
 
 ### Browser Compatibility
-* Google Chrome Version (106.0.5249.119)
-* Mozilla Firefox (version 105.0.3)
-* Min (version 1.26.0)
-* Apple Safari (version 16.0)
-* Microsoft Edge (version 106.0.1370.47)
+
+* Google Chrome Version (122.0.6261.29)
+* Mozilla Firefox (version 122.0)
+* Apple Safari (version 16.6)
+* Microsoft Edge (version 121.0.2277.113)
 
 [Back to top](<#table-of-content>)
 
 ### Lighthouse
-Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. I tested the *index page*, *review details page*, *the admin area* and *the about page*. The testing showed the following:
 
-* Index Page - Performance: 75, Accessibility: 100, Best Practises: 100, SEO: 92
-* Review Details Page - Performance: 81, Accessibility: 98, Best Practises: 100, SEO: 92
-* Admin Area - Performance: 85, Accessibility: 97, Best Practises: 100, SEO: 100
-* About page - Performance: 73, Accessibility: 98, Best Practises: 100, SEO: 100
-
-In general this is OK results. The performance is affected in a negative way by external scripts (connected to i.e. Bootstrap) and the lower result on SEO on the Index page and Admin Area Page is i.e. connected to the 'read more' links that is not a 100% optimal description from a SEO point of view. The lower accessibility result on the review details page is connected to the heading elements not being in sequentially-descending order, but this is an active design choice and not a big issue (but I thought it would be proper to highlight it here so that it's clear I'm aware of it).
+Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*.
 
 <details><summary><b>Lighthouse Index Result</b></summary>
 
-![Lighthouse Index Result](readme/assets/images/lighthouse_index.png)
+![Lighthouse Index Result](assets/images/lighthouse_index.png)
 </details><br/>
 
-<details><summary><b>Lighthouse Review Details Page Result</b></summary>
+<details><summary><b>Lighthouse Review Blog Page Result</b></summary>
 
-![Lighthouse Review Details Page](readme/assets/images/lighthouse_review_details_page.png)
+![Lighthouse Review Details Page](assets/images/lighthouse_review_details_page.png)
 </details><br/>
 
 <details><summary><b>Lighthouse Admin Area Result</b></summary>
 
 
-![Lighthouse Admin Area Result](readme/assets/images/lighthouse_admin_area.png)
+![Lighthouse Admin Area Result](assets/images/lighthouse_admin_area.png)
 </details><br/>
 
-<details><summary><b>Lighthouse About Page Result</b></summary>
+<details><summary><b>Lighthouse Home Page Result</b></summary>
 
-![Lighthouse About Page Result](readme/assets/images/lighthouse_about.png)
+![Lighthouse About Page Result](assets/images/lighthouse_about.png)
 </details><br/>
 
 
@@ -783,51 +618,43 @@ In general this is OK results. The performance is affected in a negative way by 
 
 <details><summary><b>a11y Result</b></summary>
 
-![a11y Result](readme/assets/images/a11y_contrast_test.png)
+![a11y Result](assets/images/a11y_contrast_test.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### Peer Review
+
 Additional testing of the application was conducted by people outside of the software development field. Some smaller spelling and grammar errors were found and corrected. No issues connected to design or handling of the site.
 
 ## Known bugs
+
 No known bugs besides those in the fixed / unfixed bugs section.
 
 ### Fixed Bugs
-**2022-10-10**
-* Bug: When updating a review or comment the approved variable did not get updated to 'False'. This is is now handled and fixed.
 
-**2022-10-11**
-* Bug: When updating a review the slug did not change. I chose to fix this bug so that the slug updates when a review is updated but one 'school' within this area says that a slug never should be changed (due to problems with urls / linking in the future). This functionality is an easy fix to remove if necessary but I chose to keep it for now.
-
-**2022-10-14**
-* Bug: When the Markup Validation was done there was initially quite a lot of errors. The debugging process was very straight forward and the errors could easily be fixed.
+* Bug: When click on notification, it says server error, contact the site admin. This is now handled and fixed.
+* Bug: also while updating a post, it says error 508. I've also handle it.
 
 <details><summary><b>HTML Validation</b></summary>
 
-![HTML Validation](readme/assets/images/html_validation_error.png)
+![HTML Validation](assets/images/html_validation_error.png)
 </details><br />
 
-**2022-10-17**
-* Bug: The CSS Validation reported an error that is connected to Font Awesome. When I validate my own CSS code there are no errors at all. So this might be a Font Awesome bug that is out of my control. But I thought it would be proper to highlight the error here in the bugs section.
+* Bug: The CSS Validation reported some best practices errors. When I validate my own CSS code there are no errors at all. But I thought it would be proper to highlight the error here in the bugs section.
 
 <details><summary><b>CSS Validation</b></summary>
 
-![CSS Validation](readme/assets/images/css_validaton_error.png)
+![CSS Validation](assets/images/css_validaton_error.png)
 </details><br />
 
 ### Unfixed Bugs
 
-**2022-10-14**
-* Bug: Summernote is not working 100% properly. I have debugged and sweeped the Internet for solutions. The issue is that when a user creates a review it's not possible to overide the choices the user makes when writing the review (i.e. font-size and font). I tried to handle this by setting rules of what tools to show in the Summernote editor without success. One workaround could of course be to remove the Summernote functionality but I did not want to do that in this project at least. This bug is still unfixed and I haven't found a solution to it yet.
-
-**2022-10-15**
-* Bug: 2 warning / issues reported in the Google Chrome DevTools console. The first one is connected to a navigator.userAgent issue and the second to usage of a deprecated feature. I have done some digging and it seems that these issues have been reported within different forums on the web. I have checked other browsers (i.e. Firefox, Min and Edge) and the issue does not show up there.
+* Bug:
 
 <details><summary><b>Warnings from Google Chrome DevTools</b></summary>
 
-![HTML Validation](readme/assets/images/google_chrome_warning.png)
+![HTML Validation](assets/images/google_chrome_warning.png)
 </details><br />
 
 [Back to top](<#table-of-content>)
@@ -838,45 +665,45 @@ No known bugs besides those in the fixed / unfixed bugs section.
 
 The project was deployed to [Heroku](https://www.heroku.com). To deploy, please follow the process below:
 
-1. To begin with we need to create a GitHub repository from the [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) by following the link and then click 'Use this template'.
+1. To begin with we need to create a GitHub repository from the [this repo](https://github.com/yemoalakija/Blog.git) by following the link and then click 'Use this template'.
 
 <details><summary><b>Heroku Deployment - Step 1</b></summary>
 
-![Heroku Deployment Step 1](readme/assets/images/heroku_01.png)
+![Heroku Deployment Step 1](assets/images/heroku_01.png)
 </details><br />
 
 2. Fill in the needed details as stated in the screenshot below and then click 'Create Repository From Template'.
 
 <details><summary><b>Heroku Deployment - Step 2</b></summary>
 
-![Heroku Deployment Step 2](readme/assets/images/heroku_02.png)
+![Heroku Deployment Step 2](assets/images/heroku_02.png)
 </details><br />
 
-3. When the repository creation is done click 'Gitpod' as stated in the screenshot below.
+3. When the repository creation is done click 'GitHub' as stated in the screenshot below.
 
 <details><summary><b>Heroku Deployment - Step 3</b></summary>
 
-![Heroku Deployment Step 3](readme/assets/images/heroku_03.png)
+![Heroku Deployment Step 3](assets/images/heroku_03.png)
 </details><br />
 
 4. Now it's time to install Django and the supporting libraries that are needed. Type the commands below to do this.
 
-* ```pip3 install 'django<4' gunicorn```
-* ```pip3 install 'dj_database_url psycopg2```
-* ```pip3 install 'dj3-cloudinary-storage```
+* ```pip install 'django<4' gunicorn```
+* ```pip install 'dj_database_url psycopg2```
+* ```pip install 'dj3-cloudinary-storage```
 
 <details><summary><b>Heroku Deployment - Step 4</b></summary>
 
-![Heroku Deployment Step 4](readme/assets/images/heroku_04.png)
+![Heroku Deployment Step 4](assets/images/heroku_04.png)
 </details><br />
 
 5. When Django and the libraries are installed we need to create a requirements file.
 
-* ```pip3 freeze --local > requirements.txt``` - This will create and add required libraries to requirements.txt
+* ```pip freeze --local > requirements.txt``` - This will create and add required libraries to requirements.txt
 
 <details><summary><b>Heroku Deployment - Step 5</b></summary>
 
-![Heroku Deployment Step 5](readme/assets/images/heroku_05.png)
+![Heroku Deployment Step 5](assets/images/heroku_05.png)
 </details><br />
 
 6. Now it's time to create the project.
@@ -885,29 +712,29 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 <details><summary><b>Heroku Deployment - Step 6</b></summary>
 
-![Heroku Deployment Step 6](readme/assets/images/heroku_06.png)
+![Heroku Deployment Step 6](assets/images/heroku_06.png)
 </details><br />
 
 7. When the project is created we can now create the application.
 
-* ```python3 manage.py startapp APP_NAME``` - This will create your application
+* ```python manage.py startapp APP_NAME``` - This will create your application
 
 <details><summary><b>Heroku Deployment - Step 7</b></summary>
 
-![Heroku Deployment Step 7](readme/assets/images/heroku_07.png)
+![Heroku Deployment Step 7](assets/images/heroku_07.png)
 </details><br />
 
 8. We now need to add the application to settings.py
 
 <details><summary><b>Heroku Deployment - Step 8</b></summary>
 
-![Heroku Deployment Step 8](readme/assets/images/heroku_08.png)
+![Heroku Deployment Step 8](assets/images/heroku_08.png)
 </details><br />
 
 8. Now it is time to do our first migration and run the server to test that everything works as expected. This is done by writing the commands below.
 
-* ```python3 manage.py migrate``` - This will migrate the changes
-* ```python3 manage.py runserver``` - This runs the server. To test it, click the open browser button that will be visible after the command is run.
+* ```python manage.py migrate``` - This will migrate the changes
+* ```python manage.py runserver``` - This runs the server. To test it, click the open browser button that will be visible after the command is run.
 
 9. Now it is time to create our application on Heroku, attach a database, prepare our environment and settings.py file and setup the Cloudinary storage for our static and media files.
 
@@ -917,47 +744,47 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 <details><summary><b>Heroku Step 09</b></summary>
 
-![Heroku Step 9](readme/assets/images/heroku_09.png)
+![Heroku Step 9](assets/images/heroku_09.png)
 </details><br />
 
 10. Now it's time to enter an application name that needs to be unique. When you have chosen the name, choose your region and click 'Create app".
 
 <details><summary><b>Heroku Step 10</b></summary>
 
-![Heroku Step 10](readme/assets/images/heroku_10.png)
+![Heroku Step 10](assets/images/heroku_10.png)
 </details><br />
 
 11. To add a database to the app you need to go to the resources tab ->> add-ons, search for 'Heroku Postgres' and add it.
 
 <details><summary><b>Heroku Step 11</b></summary>
 
-![Heroku Step 11](readme/assets/images/heroku_11_1.png)
-![Heroku Step 11](readme/assets/images/heroku_11_2.png)
+![Heroku Step 11](assets/images/heroku_11_1.png)
+![Heroku Step 11](assets/images/heroku_11_2.png)
 </details><br />
 
 12. Go to the settings tab and click on the reveal Config Vars button. Copy the text from DATABASE_URL (because we are going to need it in the next step).
 
 <details><summary><b>Heroku Step 12</b></summary>
 
-![Heroku Step 12](readme/assets/images/heroku_12.png)
+![Heroku Step 12](assets/images/heroku_12.png)
 </details><br />
 
-13. Go back to GitPod and create a new env.py in the top level directory. Then add these rows.
+13. Go back to your codespace and create a new `.env` file in the top level directory. Then add these rows.
 
-* ```import os``` - This imports the os library
-* ```os.environ["DATABASE_URL_FROM HEROKU"]``` - This sets the environment variables.
-* ```os.environ["SECRET_KEY"]``` - Here you can choose whatever secret key you want.
+* ```DATABASE_URL = "YOUR_DATABASE_URL"``` - This sets the environment variables.
+* ```SECRET_KEY = "YOUR_SECRET_KEY"``` - Here you can choose whatever secret key you want.
+* ```CLOUDINARY_URL = "YOUR_CLOUDINARY_URL"``` - Cloudinary connection string.
 
 <details><summary><b>Heroku Step 13</b></summary>
 
-![Heroku Step 13](readme/assets/images/heroku_13.png)
+![Heroku Step 13](assets/images/heroku_13.png)
 </details><br />
 
-14. Now we are going to head back to Heroku to add our secret key to config vars. See screenshot below.
+1.  Now we are going to head back to Heroku to add the specified environemnt variables to config vars. See screenshot below.
 
 <details><summary><b>Heroku Step 14</b></summary>
 
-![Heroku Step 14](readme/assets/images/heroku_14.png)
+![Heroku Step 14](assets/images/heroku_14.png)
 </details><br />
 
 15. Now we have some preparations to do connected to our environment and settings.py file. In the settings.py, add the following code:
@@ -966,28 +793,28 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 ```import dj_database_url```
 
-```if os.path.isfile("env.py"):```
+```from dotenv import load_dotenv```
 
-```import env```
+```load_dotenv()```
 
 <details><summary><b>Heroku Step 15</b></summary>
 
-![Heroku Step 15](readme/assets/images/heroku_15.png)
+![Heroku Step 15](assets/images/heroku_15.png)
 </details><br />
 
 16. In the settings file, remove the insecure secret key and replace it with:
-```SECRET_KEY = os.environ.get('SECRET_KEY')```
+```SEECRET_KEY = os.getenv('SECRET_KEY')```
 
 <details><summary><b>Heroku Step 16</b></summary>
 
-![Heroku Step 16](readme/assets/images/heroku_16.png)
+![Heroku Step 16](assets/images/heroku_16.png)
 </details><br />
 
-17. Now we need to comment out the old database setting in the settings.py file (this is because we are going to use the postgres database instead of the sqlite3 database).
+1.  Now we need to comment out the old database setting in the settings.py file (this is because we are going to use the postgres database instead of the sqlite3 database).
 
 <details><summary><b>Heroku Step 17 1/2</b></summary>
 
-![Heroku Step 17](readme/assets/images/heroku_17_1.png)
+![Heroku Step 17](assets/images/heroku_17_1.png)
 </details><br />
 
 Now, add the link to the DATABASE_URL that we added to the environment file earlier.
@@ -999,36 +826,36 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 18. Save all your fields and migrate the changes.
 
-```python3 manage.py migrate```
+```python manage.py migrate```
 
 19. Now we are going to get our connection to Cloudinary connection working (this is were we will store our static files). First you need to create a Cloudinary account and from the Cloudinary dashboard copy the API Environment Variable.
 
-20. Go back to the env.py file in Gitpod and add the Cloudinary url (it's very important that the url is correct):
+20. Go back to the `.env` file in our codespace and add the Cloudinary url as said No.13 above (it's very important that the url is correct):
 
-```os.environ["CLOUDINARY_URL"] = "cloudinary://************************"```
+```CLOUDINARY_URL = "cloudinary://************************"```
 
 21. Let's head back to Heroku and add the Cloudinary url in Config Vars. We also need to add a disable collectstatic variable to get our first deployment to Heroku to work.
 
 <details><summary><b>Heroku Step 21</b></summary>
 
-![Heroku Step 21](readme/assets/images/heroku_21.png)
+![Heroku Step 21](assets/images/heroku_21.png)
 </details><br />
 
 22. Let's head back to our settings.py file on Gitpod. We now need to add our Cloudinary Libraries we installed earlier to the installed apps. Here it is important to get the order correct.
 
 <details><summary><b>Heroku Step 22</b></summary>
 
-![Heroku Step 22](readme/assets/images/heroku_22.png)
+![Heroku Step 22](assets/images/heroku_22.png)
 </details><br />
 
 23. For Django to be able to understand how to use and where to store static files we need to add some extra rows to the settings.py file.
 
 <details><summary><b>Heroku Step 23</b></summary>
 
-![Heroku Step 23](readme/assets/images/heroku_23.png)
+![Heroku Step 23](assets/images/heroku_23.png)
 </details><br />
 
-24. Hang in there, we have just a couple of steps left. Now it's time to link the file to the Heroku templates directory.
+24. Almost there, we have just a couple of steps left. Now it's time to link the file to the Heroku templates directory.
 
 <details><summary><b>Heroku Step 24</b></summary>
 
@@ -1039,7 +866,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 <details><summary><b>Heroku Step 25</b></summary>
 
-![Heroku Step 25](readme/assets/images/heroku_25.png)
+![Heroku Step 25](assets/images/heroku_25.png)
 </details><br />
 
 26. To be able to get the application to work through Heroku we also need to add our Heroku app and localhost to which hosts that are allowed.
@@ -1049,12 +876,37 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 ![Heroku Step 26](readme/assets/images/heroku_26.png)
 </details><br />
 
-27. Now we just need to add some files to Gitpod.
+27. For this project, we'll use `whitenoise` package to take care of our staticfiles.
 
-* Create 3 folders in the top level directory: **media**, **static**, **templates**
+* ```pip install whitenoise```
+* We need to install middleware, add:
+
+  ```bash
+
+  MIDDLEWARE = [
+    # ...other middlewares
+    'whitenoise.middleware.WhiteNoiseMiddleware',]
+
+* Set static storage:
+
+  ```bash
+  STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+* Configure static files:
+  ```bash
+  STATIC_URL = '/assets/'
+  STATICFILES_DIR = [
+    os.path.join(BASE_DIR / 'assets')
+  ]
+  STATIC_ROOT = os.path.join(BASE_DIR / 'staticfiles')
+  STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+  ```
+
+* We run: `python manage.py collectstatic` for whitenoise to takecare of the static files of the project.
 * Create a file called **Procfile* and add the line ```web: gunicorn PROJ_NAME.wsgi?``` to it.d
 
-28. Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
+1.  Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
 
 * ```git add .```
 * ```git commit -m "Deployment Commit```
@@ -1068,10 +920,10 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 <details><summary><b>Heroku Step 31</b></summary>
 
-![Heroku Step 31](readme/assets/images/heroku_31.png)
+![Heroku Step 31](assets/images/heroku_31.png)
 </details><br />
 
-The live link to the 'Review | Alliance' site on Heroku an be found [here](https://project-portfolio-4.herokuapp.com/). And the Github repository can be found [here](https://github.com/worldofmarcus/project-portfolio-4).
+The live link to the 'Yemo Blog' site on Heroku an be found [here](https://yemos-blog-website-3ef5a934b3dc.herokuapp.com/). And the Github repository can be found [here](https://github.com/yemoalakija/Blog).
 
 [Back to top](<#table-of-content>)
 
@@ -1083,7 +935,7 @@ It is possible to do a independent copy of a GitHub Repository by forking the Gi
 
 <details><summary><b>Github Fork</b></summary>
 
-![Fork](readme/assets/images/github_fork.png)
+![Fork](assets/images/github_fork.png)
 </details><br />
 
 [Back to top](<#table-of-content>)
@@ -1095,25 +947,27 @@ To clone and set up this project you need to follow the steps below.
 1. When you are in the repository, find the code tab and click it.
 2. To the left of the green GitPod button, press the 'code' menu. There you will find a link to the repository. Click on the clipboard icon to copy the URL.
 3. Use an IDE and open Git Bash. Change directory to the location where you want the cloned directory to be made.
-4. Type 'git clone', and then paste the URL that you copied from GitHub. Press enter and a local clone will be created.
+4. Type `git clone`, and then paste the URL that you copied from GitHub. Press enter and a local clone will be created.
 
 <details><summary><b>Github Create Local Clone</b></summary>
 
-![Clone](readme/assets/images/github_clone_01.png)
+![Clone](assets/images/github_clone_01.png)
 </details><br />
 
 5. To be able to get the project to work you need to install the requirements. This can be done by using the command below:
 
-* ```pip3 install -r requirements.txt``` - This command downloads and install all required dependencies that is stated in the requirements file.
+* ```pip install -r requirements.txt``` - This command downloads and install all required dependencies that is stated in the requirements file.
+  Note: You can as well setup a virtual environment before installing the `requirements.txt` file:
+    * In your local machine of IDE, in the directory where the repo is cloned, run: `python -m venv "YOUR_VIRTUAL_ENVIRONMENT_NAME"` The `virtual_envronemnt_name` can be any name you want. Then you need to activate the envronment by running: `.\VIRTUAL_ENV_NAME\Script\activate` on windows or `source VIRTUAL_ENV_NAME/bin/activate` on macOS
 
-6. The next step is to set up the environment file so that the project knows what variables that needs to be used for it to work. Environment variables are usually hidden due to sensitive information. It's very important that you don't push the env.py file to Github (this can be secured by adding env.py to the .gitignore-file). The variables that are declared in the env.py file needs to be added to the Heroku config vars. Don't forget to do necessary migrations before trying to run the server.
+6. The next step is to set up the environment file so that the project knows what variables that needs to be used for it to work. Environment variables are usually hidden due to sensitive information. It's very important that you don't push the `.env` file to Github (this can be secured by adding `.env` to the .gitignore-file). The variables that are declared in the `.env` file needs to be added to the Heroku config vars. Don't forget to do necessary migrations before trying to run the server.
 
-* ```python3 manage.py migrate``` - This will do the necessary migrations.
-* ```python3 manage.py runserver``` - If everything i setup correctly the project is now live locally.
+* ```python manage.py migrate``` - This will do the necessary migrations.
+* ```python manage.py runserver``` - If everything is setup correctly the project is now live locally.
 
-<details><summary><b>Setup env.py</b></summary>
+<details><summary><b>Setup .env</b></summary>
 
-![Clone](readme/assets/images/github_clone_02.png)
+![Clone](assets/images/github_clone_02.png)
 </details><br />
 
 [Back to top](<#table-of-content>)
@@ -1122,29 +976,20 @@ To clone and set up this project you need to follow the steps below.
 
 ## Content
 
-* All text content written by Marcus Eriksson.
+* All text content written by Adeyemo Alakija.
 
-* Test concert images on review cards taken from [Shutterstock](https://www.shutterstock.com/sv)
-
-* Test album images on review cards taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
-
-* Featured default review image taken from [FAVPNG](https://favpng.com/png_view/download-clip-art-png/hHNmGh4R)
+* Blog images taken from [Google](https://www.google.com)
 
 * Template for read.me provided by Code Institute (*with some additional changes that my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/))* suggested.
 
 ## Technical
 
-* Inspiration regarding UpdateView taken from [Learn Django Class Based Views](https://www.youtube.com/watch?v=EUUjJdw3EBM)
-
-* Formatting date format [Formatting Date, Time, and Numbers in Django Templating](https://collinshillary1.medium.com/formatting-date-time-and-numbers-in-django-templating-f53fea027a06)
-
-* Inspiration regarding CSS code to add circle around text [How to Add a Circle Around a Number in CSS](https://www.w3docs.com/snippets/css/how-to-add-a-circle-around-a-number-in-css.html)
-
-* Inspiration regarding adding extra forms in Django Allauth form [How to add more custom fields on signup form?](https://stackoverflow.com/questions/68591755/django-allauth-how-to-add-more-custom-fields-on-signup-form)
+* Inspiration regarding this project was taken from Django Walkthrough project and personal vibes to always wanting to create a blog website.
 
 # Acknowledgements
-This fictional site was created for Portfolio Project #4 (Full-Stack Tolkin) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
 
-*Adeyemo Alakija, 2022-10-18*
+This site was created for Portfolio Project #4 (Full-Stack Tolkin) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
+
+*Adeyemo Alakija, 2024*
 
 [Back to top](<#table-of-content>)
