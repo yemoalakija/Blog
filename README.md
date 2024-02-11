@@ -162,7 +162,7 @@ The user stories for this project are presented below to provide clarity on the 
 
 ## Site Structure
 
-Yemo Blog in two parts: **when the user is logged out** and **when the user is logged in**. Depending on login status different pages is available for the user. When the user is logged out, such user can only view posts, comments, likes but cannot perform any of the mentioned activities EXCEPT logged in. If you are logged in as an administrator an *admin area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
+Yemo Blog in two parts: **when the user is logged out** and **when the user is logged in**. Depending on login status different pages is available for the user. When the user is logged out, such user can only view posts, comments, likes but cannot perform any of the mentioned activities EXCEPT logged in. If you are logged in as an administrator an *`admin` area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
 
 Read more about the different choices in the [Features](<#features>) section.
 
@@ -178,9 +178,9 @@ The color scheme chosen for Yemo Blog site was based on Bootstrap colour scheme 
 
 * ### Typography
 
-The fonts used for the site is 'Roboto', which is sans-serif.
+The fonts used for the site is `Roboto`, which is sans-serif.
 
-* 'Roboto' is used generally in the website with different weigth as needed. It's easy to read and matches the minimalistic style that I wanted the site to have.
+* `Roboto` is used generally in the website with different weigth as needed. It's easy to read and matches the minimalistic style that I wanted the site to have.
 
 ![Google Fonts Impact](assets/images/google_fonts_roboto.png)
 
@@ -194,15 +194,15 @@ The features of the site are listed below.
 
 ### **Navigation**
 
-The navigation bar is very clean and straight forward. Depending if you  are logged in or not different menus are visible for the site user. If a user login, the user has the ability to post, comment, etc. An extra menu item is visible if you are logged in as an administrator.
+The navigation bar is very clean and straight forward. Depending if you  are logged in or not different menus are visible for the site user. If a user login, the user has the ability to post, comment, etc. An extra menu item is visible if you are logged in as an `administrator`.
 
 *Links that are visible to logged out users**
 
-* Home - The home page.
-* Blogs - Lists all available blogs.
-* Category - Blogs category.
-* Search - Makes blogs search possible.
-* Login / Sign Up - Gives the user the opportunity to log in or sign up if not ready a registered user at Yemo Blog.
+* `Home` - The home page.
+* `Blogs` - Lists all available blogs.
+* `Category` - Blogs category.
+* `Search` - Makes blogs search possible.
+* `Login` / `Sign Up` - Gives the user the opportunity to log in or sign up if not ready a registered user at Yemo Blog.
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
@@ -213,10 +213,10 @@ The navigation bar is very clean and straight forward. Depending if you  are log
 
 All of the links that are visible to a not logged in user plus the ones below.
 
-* Create New Post - Lets the user create a new blog post.
-* Comment/Reply - Lists all comments/replies to a blog post.
-* Profile Page - Shows logged in users profile page.
-* Log Out - Logs out the user.
+* `Create` New Post - Lets the user create a new blog post.
+* `Comment`/`Reply` - Lists all comments/replies to a blog post.
+* `Profile` Page - Shows logged in users profile page.
+* `Logout` - Logs out the user.
 
 <details><summary><b>Navigation Large - User Logged In</b></summary>
 
@@ -227,7 +227,7 @@ All of the links that are visible to a not logged in user plus the ones below.
 
 All of the links above plus the one below.
 
-* Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can publish / unpublish / approve / unapprove reviews, approve / unapprove comments and delete blog posts.
+* Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can `publish` / `unpublish` / `approve` / `unapprove` `reviews`, `approve` / `unapprove` `comments` and `delete` blog posts.
 
 <details><summary><b>Navigation Large - Admin Logged In</b></summary>
 
@@ -263,7 +263,7 @@ On this page the user can view and update their own profile page. And update pas
 
 ### **Admin Area**
 
-On this page the administrator (or other superuser decided by Yemo Blog) can *approve* / *unapprove* / *publish* / *unpublish* and *delete* blog posts, comments etc. General information about *number of users*, *number of comments*, *number of reviews*, *unapproved comments / reviews* is also being showed on the page.
+On this page the `administrator` (or other superuser decided by Yemo Blog) can *`approve`* / *`unapprove`* / *`publish`* / *`unpublish`* and *`delete`* blog posts, `comments` etc. General information about *number of users*, *number of `comments`*, *`number of reviews`*, *`unapproved comments`* is also being showed on the page.
 
 <details><summary><b>Admin Area</b></summary>
 
@@ -308,7 +308,7 @@ The footer area includes short information about Yemo Blog contact information a
 
 ### **Flash Messages and confirmation pages to the user**
 
-The sites incorporates flash messages and confirmation pages when an action has been performed (i.e. delete/update actions). Examples of this in the screenshots below.
+The sites incorporates flash messages and confirmation pages when an action has been performed (i.e. `delete/update` actions). Examples of this in the screenshots below.
 
 <details><summary><b>Confirmation Messages</b></summary>
 
@@ -372,10 +372,12 @@ The libraries used in this project are located in the requirements.txt file and 
 * [oauthlib](https://pypi.org/project/oauthlib/) - OAuthLib is a framework which implements the logic of OAuth1 or OAuth2 without assuming a specific HTTP request object or web framework.
 * [psycopg2](https://pypi.org/project/psycopg2/) - Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 * [PyJWT](https://pypi.org/project/PyJWT/) - A Python implementation of RFC 7519.
+* [python-dotenv](https://pypi.org/project/python-dotenv/) - Python-dotenv has been used in this project to store the environmental variables. For it simple and concise usage.
 * [pylint-django-2.5.3](https://pypi.org/project/pylint-django/) - A Pylint plugin for improving code analysis when analysing code using Django.
 * [requests-oauhlib](https://pypi.org/project/requests-oauthlib/) - P    rovides first-class OAuth library support for Requests.
 * [sqlparse](https://pypi.org/project/sqlparse/) - sqlparse is a non-validating SQL parser for Python. It provides support for parsing, splitting and formatting SQL statements.
 * [cryptography-3.3.23](https://pypi.org/project/cryptography/3.3/) - Cryptography is a package which provides cryptographic recipes and primitives to Python developers.
+* [whitenoise](https://whitenoise.readthedocs.io/en/latest/) - Whitenoise, radically simplified static file serving for Python web apps. I used this to serve the static files in this project.
 
 # Testing
 
@@ -539,7 +541,7 @@ Status | **Create A Profile Page - User Logged In**
 
 ### Automated Testing
 
-Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python manage.py test*
+Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 30% coverage. See screenshot below. Automated tests can be run by typing the command - *`python manage.py test`*
 
 <details><summary><b>Automated Testing</b></summary>
 
@@ -572,10 +574,10 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 
 ### Browser Compatibility
 
-* Google Chrome Version (122.0.6261.29)
-* Mozilla Firefox (version 122.0)
-* Apple Safari (version 16.6)
-* Microsoft Edge (version 121.0.2277.113)
+* `Google Chrome` Version (122.0.6261.29)
+* `Mozilla Firefox` (version 122.0)
+* `Apple Safari` (version 16.6)
+* `Microsoft Edge` (version 121.0.2277.113)
 
 [Back to top](<#table-of-content>)
 
@@ -762,7 +764,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 ![Heroku Step 11](assets/images/heroku_11_2.png)
 </details><br />
 
-12. Go to the settings tab and click on the reveal Config Vars button. Copy the text from DATABASE_URL (because we are going to need it in the next step).
+12. Go to the settings tab and click on the reveal Config Vars button. Copy the text from `DATABASE_URL` (because we are going to need it in the next step).
 
 <details><summary><b>Heroku Step 12</b></summary>
 
@@ -780,7 +782,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 ![Heroku Step 13](assets/images/heroku_13.png)
 </details><br />
 
-1.  Now we are going to head back to Heroku to add the specified environemnt variables to config vars. See screenshot below.
+14.  Now we are going to head back to Heroku to add the specified environemnt variables to config vars. See screenshot below.
 
 <details><summary><b>Heroku Step 14</b></summary>
 
@@ -810,7 +812,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 ![Heroku Step 16](assets/images/heroku_16.png)
 </details><br />
 
-1.  Now we need to comment out the old database setting in the settings.py file (this is because we are going to use the postgres database instead of the sqlite3 database).
+17.  Now we need to comment out the old database setting in the settings.py file (this is because we are going to use the postgres database instead of the sqlite3 database).
 
 <details><summary><b>Heroku Step 17 1/2</b></summary>
 
@@ -841,7 +843,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 ![Heroku Step 21](assets/images/heroku_21.png)
 </details><br />
 
-22. Let's head back to our settings.py file on Gitpod. We now need to add our Cloudinary Libraries we installed earlier to the installed apps. Here it is important to get the order correct.
+22. Let's head back to our settings.py file on codespace. We now need to add our Cloudinary Libraries we installed earlier to the installed apps. Here it is important to get the order correct.
 
 <details><summary><b>Heroku Step 22</b></summary>
 
@@ -862,7 +864,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 ![Heroku Step 24](readme/assets/images/heroku_24.png)
 </details><br />
 
-25. Let's change the templates directory to TEMPLATES_DIR in the teamplates array.
+25. Let's change the templates directory to `TEMPLATES_DIR` in the teamplates array.
 
 <details><summary><b>Heroku Step 25</b></summary>
 
@@ -887,11 +889,6 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
     # ...other middlewares
     'whitenoise.middleware.WhiteNoiseMiddleware',]
 
-* Set static storage:
-
-  ```bash
-  STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 * Configure static files:
   ```bash
   STATIC_URL = '/assets/'
@@ -901,29 +898,27 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
   STATIC_ROOT = os.path.join(BASE_DIR / 'staticfiles')
   STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-  ```
-
 * We run: `python manage.py collectstatic` for whitenoise to takecare of the static files of the project.
-* Create a file called **Procfile* and add the line ```web: gunicorn PROJ_NAME.wsgi?``` to it.d
+* Create a file called **`Procfile`* and add the line ```web: gunicorn PROJ_NAME.wsgi?``` to it.d
 
-1.  Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
+1.   Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
 
 * ```git add .```
 * ```git commit -m "Deployment Commit```
 * ```git push```
 
-29. Before moving on to the Heroku deployment we just need to add one more thing in the config vars. We need to add "PORT" in the KEY input field and "8000" in the VALUE field. If we don't add this there might be problems with the deployment.
+29. Before moving on to the Heroku deployment we just need to add one more thing in the config vars. We need to add `PORT` in the KEY input field and `8000` in the VALUE field. If we don't add this there might be problems with the deployment.
 
-30. Now it's time for deployment. Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
+30. Now it's time for deployment. Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. For deployment method, select `GitHub`. Search for the repository name you want to deploy and then click connect.
 
-31. Scroll down to the manual deployment section and click 'Deploy Branch'. Hopefully the deployment is successful!
+31. Scroll down to the manual deployment section and click `Deploy Branch`. Hopefully the deployment is successful!
 
 <details><summary><b>Heroku Step 31</b></summary>
 
 ![Heroku Step 31](assets/images/heroku_31.png)
 </details><br />
 
-The live link to the 'Yemo Blog' site on Heroku an be found [here](https://yemos-blog-website-3ef5a934b3dc.herokuapp.com/). And the Github repository can be found [here](https://github.com/yemoalakija/Blog).
+The live link to the `Yemo Blog` site on Heroku an be found [here](https://yemos-blog-website-3ef5a934b3dc.herokuapp.com/). And the Github repository can be found [here](https://github.com/yemoalakija/Blog).
 
 [Back to top](<#table-of-content>)
 
@@ -931,7 +926,7 @@ The live link to the 'Yemo Blog' site on Heroku an be found [here](https://yemos
 
 It is possible to do a independent copy of a GitHub Repository by forking the GitHub account. The copy can then be viewed and it is also possible to do changes in the copy without affecting the original repository. To fork the repository, take these steps:
 
-1. After logging in to GitHub, locate the repository. On the top right side of the page there is a 'Fork' button. Click on the button to create a copy of the original repository.
+1. After logging in to GitHub, locate the repository. On the top right side of the page there is a `Fork` button. Click on the button to create a copy of the original repository.
 
 <details><summary><b>Github Fork</b></summary>
 
@@ -945,7 +940,7 @@ It is possible to do a independent copy of a GitHub Repository by forking the Gi
 To clone and set up this project you need to follow the steps below.
 
 1. When you are in the repository, find the code tab and click it.
-2. To the left of the green GitPod button, press the 'code' menu. There you will find a link to the repository. Click on the clipboard icon to copy the URL.
+2. To the left of the green `codespace` `button`, press the 'code' menu. There you will find a link to the repository. Click on the clipboard icon to copy the URL.
 3. Use an IDE and open Git Bash. Change directory to the location where you want the cloned directory to be made.
 4. Type `git clone`, and then paste the URL that you copied from GitHub. Press enter and a local clone will be created.
 
@@ -958,7 +953,7 @@ To clone and set up this project you need to follow the steps below.
 
 * ```pip install -r requirements.txt``` - This command downloads and install all required dependencies that is stated in the requirements file.
   Note: You can as well setup a virtual environment before installing the `requirements.txt` file:
-    * In your local machine of IDE, in the directory where the repo is cloned, run: `python -m venv "YOUR_VIRTUAL_ENVIRONMENT_NAME"` The `virtual_envronemnt_name` can be any name you want. Then you need to activate the envronment by running: `.\VIRTUAL_ENV_NAME\Script\activate` on windows or `source VIRTUAL_ENV_NAME/bin/activate` on macOS
+    * In your local machine of IDE, in the directory where the repo is cloned, run: `python -m venv "YOUR_VIRTUAL_ENVIRONMENT_NAME"` The `virtual_envronemnt_name` can be any name you want. Then you need to activate the envronment by running: `.\VIRTUAL_ENV_NAME\Script\activate` on windows or `source VIRTUAL_ENV_NAME/bin/activate` on macOS. Type `deactivate` to stop the virtual environment.
 
 6. The next step is to set up the environment file so that the project knows what variables that needs to be used for it to work. Environment variables are usually hidden due to sensitive information. It's very important that you don't push the `.env` file to Github (this can be secured by adding `.env` to the .gitignore-file). The variables that are declared in the `.env` file needs to be added to the Heroku config vars. Don't forget to do necessary migrations before trying to run the server.
 
