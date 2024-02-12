@@ -208,7 +208,7 @@ The navigation bar is very clean and straight forward. Depending if you  are log
 * `Blogs` - Lists all available blogs.
 * `Category` - Blogs category.
 * `Search` - Makes blogs search possible.
-* `Login` / `Sign Up` - Gives the user the opportunity to log in or sign up if not ready a registered user at Yemo Blog.
+* `Login` / `Sign Up` - Gives the user the opportunity to log in or sign up if not already a registered user at Yemo Blog.
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
