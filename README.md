@@ -212,7 +212,12 @@ The navigation bar is very clean and straight forward. Depending if you  are log
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
-![Navigation Small - User Not Logged In](assets/images/navbar_small_not_logged_in.png)
+![Navigation - User Not Logged In](assets/images/navbar_not_logged_in.png)
+</details>
+
+<details><summary><b>Navigation - Small Screen User Not Logged In</b></summary>
+
+![Navigation - User Not Logged In](assets/images/small_screen_navbar_not_logged_in.png)
 </details><br/>
 
 *Links that are visible to logged in users*
@@ -224,9 +229,14 @@ All of the links that are visible to a not logged in user plus the ones below.
 * `Profile` Page - Shows logged in users profile page.
 * `Logout` - Logs out the user.
 
-<details><summary><b>Navigation Large - User Logged In</b></summary>
+<details><summary><b>Navigation - User Logged In</b></summary>
 
-![Navigation - User Logged In](images/navbar_large_logged_in.png)
+![Navigation - User Logged In](assets/images/navbar_logged_in.png)
+</details>
+
+<details><summary><b>Navigation - Small Screen User Not Logged In</b></summary>
+
+![Navigation - User Not Logged In](assets/images/small_screen_navbar_logged_in.png)
 </details><br/>
 
 *Links that are visible if a user is an administrator*
