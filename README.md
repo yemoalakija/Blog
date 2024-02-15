@@ -467,7 +467,7 @@ After fixing the inital errors that W3C Markup Validation Service reported, no e
 
 <details><summary><b>HTML Validation Result</b></summary>
 
-![HTML Result Home Page](assets/images/html_validation_no_error.png)
+![HTML Result Home Page](assets/images/html_validation_no_err.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
