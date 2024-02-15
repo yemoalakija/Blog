@@ -485,11 +485,7 @@ When validating my own code the W3C CSS Validator reports no errors.
 
 ### PEP Validation
 
-No errors report.
-<details><summary><b>PEP Validation Result</b></summary>
-
-![PEP Result](assets/images/pep_validation_no_error.png)
-</details><br/>
+No errors report was found in all the python files.
 
 [Back to top](<#table-of-content>)
 
