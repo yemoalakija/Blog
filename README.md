@@ -29,8 +29,8 @@ This dynamic website was meticulously crafted as part of Portfolio Project #4 (F
 - [**Features**](#features)
   - [**Existing Features**](#existing-features)
     - [**Navigation**](#navigation)
-    - [**Create Review**](#create-review)
-    - [**Update Review**](#update-review)
+    - [**Create Post**](#create-post)
+    - [**Update Post**](#update-post)
     - [**Profile Page**](#profile-page)
     - [**Admin Area**](#admin-area)
     - [**Sign Up**](#sign-up)
@@ -245,36 +245,46 @@ All of the links above plus the one below.
 
 * Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can `publish` / `unpublish` / `approve` / `unapprove` `reviews`, `approve` / `unapprove` `comments` and `delete` blog posts.
 
-<details><summary><b>Navigation Large - Admin Logged In</b></summary>
+<details><summary><b>Navigation - Admin Logged In</b></summary>
 
-![Navigation Small - Admin Logged In](assets/images/navbar_small_admin_logged_in.png)
+![Navigation Small - Admin Logged In](assets/images/admin_logged_in.png)
 </details><br/>
 
-### **Create Review**
+### **Create Post**
 
-On this page the registered and logged in user can create their own blog and post it.
+On this page the registered and logged in user can create their own blog and post it. Click on the profile name then on `My Profile`, there a link to a create blog post.
+
+<details><summary><b>Profile Page</b></summary>
+
+![Profile Page](assets/images/profile_page.png)
+</details>
 
 <details><summary><b>Create Blog</b></summary>
 
-![Add Blog](images/create_review.png)
+![Add Blog](assets/images/add_blog.png)
 </details><br/>
 
-### **Update Review**
+### **Update Post**
 
-On this page the registered and logged in user can update their own blog posts.
+On this page the registered and logged in user can update their own blogs. The user will click on `My Blogs` on the `Profile Page`, this will display the list of blogs a User has. Through this view, a user han `update` and `delete` owned blogs.
 
-<details><summary><b>Update Review</b></summary>
+<details><summary><b>List of Owned Blogs</b></summary>
 
-![Update Review](readme/assets/images/update_review.png)
+![List of Owned Blogs](assets/images/my_blogs.png)
+</details>
+
+<details><summary><b>Update Blog</b></summary>
+
+![Update Blog](assets/images/update_blog.png)
 </details><br/>
 
 ### **Profile Page**
 
 On this page the user can view and update their own profile page. And update passwords.
 
-<details><summary><b>Profile Page</b></summary>
+<details><summary><b>User Profile Page</b></summary>
 
-![Profile Page](assets/images/update_profile.png)
+![User Profile Page](assets/images/profile_page.png)
 </details><br/>
 
 ### **Admin Area**
@@ -283,7 +293,7 @@ On this page the `administrator` (or other superuser decided by Yemo Blog) can *
 
 <details><summary><b>Admin Area</b></summary>
 
-![Admin Area](assets/images/admin_area.png)
+![Admin Area](assets/images/admin_logged_in.png)
 </details><br/>
 
 ### **Sign Up**
