@@ -338,8 +338,11 @@ The sites incorporates flash messages and confirmation pages when an action has 
 
 <details><summary><b>Confirmation Messages</b></summary>
 
-![Review Created Success](assets/images/review_created_success.png)
-![Review Deleted Success](assets/images/review_deleted_success.png)
+![Registration Success](assets/images/success_1.png)
+![Profil Image Update Success](assets/images/success_2.png)
+![Blog Add Success](assets/images/success_3.png)
+![Update Blog Success](assets/images/success_4.png)
+![Delete Blog Success](assets/images/success_5.png)
 </details><br/>
 
 ### Features Left to Implement
