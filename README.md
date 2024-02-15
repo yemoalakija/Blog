@@ -478,7 +478,7 @@ When validating my own code the W3C CSS Validator reports no errors.
 
 <details><summary><b>CSS Validation Result</b></summary>
 
-![HTML Result Home Page](assets/images/html_validation_no_error.png)
+![HTML Result Home Page](assets/images/css_validation_bootstrap_errs.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
