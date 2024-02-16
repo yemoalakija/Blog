@@ -568,7 +568,7 @@ Some automated testing has been done during this project. Due to prioritization 
 
 <details><summary><b>Automated Testing</b></summary>
 
-![Automated Testing](assets/images/test_coverage_report.png)
+![Automated Testing](assets/images/pytest.png)
 </details><br/>
 
 ### Responsiveness Test
