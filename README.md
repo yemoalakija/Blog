@@ -669,7 +669,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 ![Heroku Deployment Step 2](assets/images/heroku_02.png)
 </details><br />
 
-3. When the repository creation is done click 'GitHub' as stated in the screenshot below.
+3. When the repository creation is done click 'GitHub' as stated in the screenshot below to create a codespace.
 
 <details><summary><b>Heroku Deployment - Step 3</b></summary>
 
@@ -811,7 +811,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 <details><summary><b>Heroku Step 17 2/2</b></summary>
 
-![Heroku Step 17](readme/assets/images/heroku_17_2.png)
+![Heroku Step 17](assets/images/heroku_17_2.png)
 </details><br />
 
 18. Save all your fields and migrate the changes.
@@ -849,7 +849,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 <details><summary><b>Heroku Step 24</b></summary>
 
-![Heroku Step 24](readme/assets/images/heroku_24.png)
+![Heroku Step 24](assets/images/heroku_24.png)
 </details><br />
 
 25. Let's change the templates directory to `TEMPLATES_DIR` in the teamplates array.
@@ -863,7 +863,7 @@ Now, add the link to the DATABASE_URL that we added to the environment file earl
 
 <details><summary><b>Heroku Step 26</b></summary>
 
-![Heroku Step 26](readme/assets/images/heroku_26.png)
+![Heroku Step 26](assets/images/heroku_26.png)
 </details><br />
 
 27. For this project, we'll use `whitenoise` package to take care of our staticfiles.
