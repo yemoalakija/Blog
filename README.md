@@ -56,8 +56,6 @@ This dynamic website was meticulously crafted as part of Portfolio Project #4 (F
     - [Responsiveness Test](#responsiveness-test)
     - [Browser Compatibility](#browser-compatibility)
     - [Lighthouse](#lighthouse)
-    - [WAVE](#wave)
-    - [a11y Color Contrast Accessibility Validator](#a11y-color-contrast-accessibility-validator)
     - [Peer Review](#peer-review)
   - [Known bugs](#known-bugs)
     - [Fixed Bugs](#fixed-bugs)
@@ -610,42 +608,14 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 
 Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*.
 
-<details><summary><b>Lighthouse Index Result</b></summary>
-
-![Lighthouse Index Result](assets/images/lighthouse_index.png)
-</details><br/>
-
-<details><summary><b>Lighthouse Review Blog Page Result</b></summary>
-
-![Lighthouse Review Details Page](assets/images/lighthouse_review_details_page.png)
-</details><br/>
-
-<details><summary><b>Lighthouse Admin Area Result</b></summary>
-
-
-![Lighthouse Admin Area Result](assets/images/lighthouse_admin_area.png)
-</details><br/>
-
 <details><summary><b>Lighthouse Home Page Result</b></summary>
 
-![Lighthouse About Page Result](assets/images/lighthouse_about.png)
+![Lighthouse Home Page Result](assets/images/lighthouse_about.png)
 </details><br/>
 
+<details><summary><b>Lighthouse Blog Page Result</b></summary>
 
-### WAVE
-[WAVE](https://wave.webaim.org/) was used to check accessibility. 0 errors were found.
-
-<details><summary><b>WAVE Result</b></summary>
-
-![WAVE Result](readme/assets/images/wave_result.png)
-</details><br/>
-
-### a11y Color Contrast Accessibility Validator
-[a11y](https://color.a11y.com/Contrast/) was used to check the color contrast accessibility. 0 errors were found.
-
-<details><summary><b>a11y Result</b></summary>
-
-![a11y Result](assets/images/a11y_contrast_test.png)
+![Lighthouse Blog Details Page](assets/images/lighthouse_review_details_page.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
@@ -656,32 +626,25 @@ Additional testing of the application was conducted by people outside of the sof
 
 ## Known bugs
 
-No known bugs besides those in the fixed / unfixed bugs section.
+There are Bootstrap 5.3 CSS errors
 
 ### Fixed Bugs
 
 * Bug: When click on notification, it says server error, contact the site admin. This is now handled and fixed.
 * Bug: also while updating a post, it says error 508. I've also handle it.
 
-<details><summary><b>HTML Validation</b></summary>
-
-![HTML Validation](assets/images/html_validation_error.png)
-</details><br />
+### Unfixed Bugs
 
 * Bug: The CSS Validation reported some best practices errors. When I validate my own CSS code there are no errors at all. But I thought it would be proper to highlight the error here in the bugs section.
 
 <details><summary><b>CSS Validation</b></summary>
 
-![CSS Validation](assets/images/css_validaton_error.png)
+![CSS Validation](assets/images/css_validation_bootstrap_errs.png)
 </details><br />
-
-### Unfixed Bugs
-
-* Bug:
 
 <details><summary><b>Warnings from Google Chrome DevTools</b></summary>
 
-![HTML Validation](assets/images/google_chrome_warning.png)
+![Console Warning](assets/images/console_warning.png)
 </details><br />
 
 [Back to top](<#table-of-content>)
