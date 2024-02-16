@@ -968,6 +968,7 @@ To clone and set up this project you need to follow the steps below.
 ## Technical
 
 * Inspiration regarding this project was taken from Django Walkthrough project and personal vibes to always wanting to create a blog website.
+* There are still more functions I will continue to explore and improve on this project in the future.
 
 # Acknowledgements
 
