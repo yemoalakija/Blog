@@ -610,12 +610,12 @@ Google Lighthouse in Chrome Developer Tools was used to test the application wit
 
 <details><summary><b>Lighthouse Home Page Result</b></summary>
 
-![Lighthouse Home Page Result](assets/images/lighthouse_about.png)
+![Lighthouse Home Page Result](assets/images/lighthouse_test.png)
 </details><br/>
 
 <details><summary><b>Lighthouse Blog Page Result</b></summary>
 
-![Lighthouse Blog Details Page](assets/images/lighthouse_review_details_page.png)
+![Lighthouse Blog Page](assets/images/lighthouse_test_blog_page.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
