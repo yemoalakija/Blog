@@ -493,11 +493,11 @@ No errors report was found in all the python files.
 
 The JSHint validator results can be seen below:
 
-No errors were returned when passing through JSHint (script.js).
+It shows an unknown error.
 
 <details><summary><b>JSHint Validation Result</b></summary>
 
-![JSHint Validation](readme/assets/images/js_hint_validation.png)
+![JSHint Validation](assets/images/js_validation.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
