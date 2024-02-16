@@ -472,7 +472,7 @@ After fixing the inital errors that W3C Markup Validation Service reported, no e
 
 ### CSS Validaton
 
-Some bootstrap errors were found in the css file as shown below.
+Some Bootstrap errors were found in the css file as shown below.
 
 <details><summary><b>CSS Validation Result</b></summary>
 
