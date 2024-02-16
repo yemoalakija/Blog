@@ -472,7 +472,7 @@ After fixing the inital errors that W3C Markup Validation Service reported, no e
 
 ### CSS Validaton
 
-When validating my own code the W3C CSS Validator reports no errors.
+Some bootstrap errors were found in the css file as shown below.
 
 <details><summary><b>CSS Validation Result</b></summary>
 
